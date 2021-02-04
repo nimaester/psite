@@ -1,5 +1,5 @@
 import React, {Fragment} from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {Route, Switch, useLocation} from "react-router-dom";
 import AboutMain from "./AboutMain";
 import Contact from "./Contact";
 import Skl_Edu from "./Skl_Edu";
@@ -8,17 +8,22 @@ import {AnimatePresence} from "framer-motion";
 import "./styles/app.scss"
 
 const App = () => {
+
+  const location = useLocation();
+  console.log(location)
+
   return (
-    <Router>
       <Fragment>
         <Nav />
-        <Switch>
+        <AnimatePresence exitBeforeEnter>
+        <Switch location={location} key={location.pathname}>
           <Route exact path="/" component={AboutMain} />
           <Route exact path="/skills&education" component={Skl_Edu} />
           <Route exact path="/contact" component={Contact} />
         </Switch>
+        </AnimatePresence>
       </Fragment>
-    </Router>
+
   );
 };
 

@@ -1,5 +1,7 @@
 import React, {useState} from "react";
 import axios from "axios";
+import {slideUpAnimation} from './animations/animation'
+import {motion} from "framer-motion";
 
 const Contact = () => {
   const defaultState = {
@@ -40,7 +42,10 @@ const Contact = () => {
   };
 
   return (
-    <div className='contact'>
+    <motion.div className='contact' variants={slideUpAnimation}
+    initial="hidden"
+    animate="show"
+    exit="exit">
       <form id='contact-form' onSubmit={handleSubmit}>
         <div className='form-group'>
           <label>Name</label>
@@ -77,7 +82,7 @@ const Contact = () => {
           Submit
         </button>
       </form>
-    </div>
+    </motion.div>
   );
 };
 
