@@ -1,23 +1,17 @@
 import React from "react";
+import {useHistory} from "react-router-dom"
 import { motion } from "framer-motion";
 
 const About = () => {
+
   const home1 = "https://ntgnrlbkt.s3-us-west-1.amazonaws.com/nim-crop.jpg";
 
-  // const motion1 = {
-  //   hidden: { opacity: 0 },
-  //   show: { opacity: 1, transition: { duration: 0.5 } },
-  // };
+  const history = useHistory();
 
-  // const motion2 = {
-  //   hidden: { opacity: 0 },
-  //   show: { opacity: 1, transition: { duration: 1.5 } },
-  // };
-
-  // const motion3 = {
-  //   hidden: { opacity: 0 },
-  //   show: { opacity: 1, transition: { duration: 2.5 } },
-  // };
+  const redirect = () => {
+    let path = '/contact';
+    history.push(path)
+  }
 
   return (
     <div className='about'>
@@ -35,7 +29,7 @@ const About = () => {
             <br/>
             <br/>
           </div>
-          <motion.button>
+          <motion.button onClick={redirect} >
             Contact Me
           </motion.button>
         </div>
@@ -48,3 +42,18 @@ const About = () => {
 };
 
 export default About;
+
+  // const motion1 = {
+  //   hidden: { opacity: 0 },
+  //   show: { opacity: 1, transition: { duration: 0.5 } },
+  // };
+
+  // const motion2 = {
+  //   hidden: { opacity: 0 },
+  //   show: { opacity: 1, transition: { duration: 1.5 } },
+  // };
+
+  // const motion3 = {
+  //   hidden: { opacity: 0 },
+  //   show: { opacity: 1, transition: { duration: 2.5 } },
+  // };
