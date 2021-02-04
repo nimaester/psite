@@ -8,6 +8,7 @@ export const slideUpAnimation = {
     y: 0,
     transition: {
       duration: 0.8,
+      when: "beforeChildren"
     }
   },
   exit: {
@@ -15,6 +16,33 @@ export const slideUpAnimation = {
     y: 300,
     transition: {
       duration: 0.8,
+    }
+  }
+}
+
+export const slideDownAnimation = {
+  hidden: {
+    opacity: 0,
+    y: 100,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.8,
+    }
+  }
+}
+
+export const slideLeftAnimation = {
+  hidden: {
+    x: -500,
+  },
+  show: {
+    x: 0,
+    transition: {
+      duration: 0.5, ease: "easeOut",
+      when: "beforeChildren"
     }
   }
 }
