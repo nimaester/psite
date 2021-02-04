@@ -6,7 +6,7 @@ import { slideUpAnimation } from "./animations/animation";
 
 const Skl_Edu = () => {
   return (
-    <motion.div variants={slideUpAnimation} initial='hidden' animate='show'>
+    <motion.div variants={slideUpAnimation} initial='hidden' animate='show' exit='exit'>
       <Skills />
       <Education />
     </motion.div>

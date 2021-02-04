@@ -11,6 +11,7 @@ const AboutMain = () => {
       variants={slideUpAnimation}
       initial="hidden"
       animate="show"
+      exit="exit"
     >
       <About />
       <Services />

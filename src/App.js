@@ -4,6 +4,7 @@ import AboutMain from "./AboutMain";
 import Contact from "./Contact";
 import Skl_Edu from "./Skl_Edu";
 import Nav from "./Nav";
+import {AnimatePresence} from "framer-motion";
 import "./styles/app.scss"
 
 const App = () => {
