@@ -1,86 +1,40 @@
-import React, {useState} from "react";
-import axios from "axios";
-import {slideUpAnimation} from './animations/animation'
-import {motion} from "framer-motion";
+import React from "react";
+import emailjs from 'emailjs-com';
+import { slideUpAnimation } from "./animations/animation";
+import { motion } from "framer-motion";
 
 const Contact = () => {
-  const defaultState = {
-    name: "",
-    email: "",
-    message: "",
-  };
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-  let [info, setInfo] = useState(defaultState);
-
-  let handleSubmit = (event) => {
-    event.preventDefault();
-    axios({
-      method: "POST",
-      url: "http://localhost:3002/send",
-      data: info,
-    }).then((response) => {
-      if (info.name === "" || info.email === "" || info.message === "") {
-        alert("Please fill in the appropriate boxes.");
-      } else if (response.data.status === "success") {
-        alert("Message Sent.");
-        resetForm();
-      } else if (response.data.status === "fail") {
-        alert("Message failed to send.");
-      }
-    });
-  };
-
-  let resetForm = () => {
-    setInfo(defaultState);
-  };
-
-  let handleChange = (event) => {
-    setInfo({
-      ...info,
-      [event.target.name]: event.target.value,
-    });
+    emailjs.sendForm("gmail", "template_1fnqpcr", e.target, "user_7q9goxLOYdywpMLHQQLe3")
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+      e.target.reset();
   };
 
   return (
-    <motion.div className='contact' variants={slideUpAnimation}
-    initial="hidden"
-    animate="show"
-    exit="exit">
-      <form id='contact-form' onSubmit={handleSubmit}>
-        <div className='form-group'>
-          <label>Name</label>
-          <input
-            type='text'
-            className='form-control'
-            name='name'
-            value={info.name}
-            onChange={handleChange}
-          />
-        </div>
-        <div className='form-group'>
-          <label>Email address</label>
-          <input
-            type='email'
-            className='form-control'
-            name='email'
-            value={info.email}
-            onChange={handleChange}
-          />
-        </div>
-        <div className='form-group'>
-          <label>Message</label>
-          <textarea
-            className='form-control'
-            cols="100"
-            rows='10'
-            name='message'
-            value={info.message}
-            onChange={handleChange}
-          />
-        </div>
-        <button type='submit' className='btn btn-primary'>
-          Submit
-        </button>
+    <motion.div
+      className='contact'
+      variants={slideUpAnimation}
+      initial='hidden'
+      animate='show'
+      exit='exit'
+    >
+      <form className='contact-form' onSubmit={sendEmail}>
+        <label>Name</label>
+        <input type='text' name='name' />
+        <label>Email</label>
+        <input type='email' name='email' />
+        <label>Message</label>
+        <textarea name='message' />
+        <input type='submit' value='Send' />
       </form>
     </motion.div>
   );
