@@ -62,7 +62,6 @@
 
 @media screen and (max-width: 860px) {
   .skills {
-    width: 100%;
     padding: 0;
     h2 {
       font-size: 2rem;
@@ -71,10 +70,11 @@
   .section {
     display: flex;
     flex-wrap: wrap;
+    padding: 6rem 1rem 0rem 1rem ;
   }
 
   .tech-skills {
-    grid-template-columns: repeat(2, 220px);
+    grid-template-columns: 50% 70%;
   }
 
   .skills-type, .skills-type2 {
