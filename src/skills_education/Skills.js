@@ -24,6 +24,7 @@ const Skills = () => {
               <span className='skills-type'>React.js</span>
               <span className='skills-rating'>
                 <StarRatings
+                  className='StarRatings'
                   starRatedColor='#11999e'
                   starEmptyColor='grey'
                   rating={5}

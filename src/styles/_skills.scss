@@ -40,11 +40,11 @@
   color: black;
   font-weight: 200;
   grid-column: 1/2;
-  line-height: 2.5;
+  line-height: 4;
 }
 
 .skills-rating {
-  line-height: 2.5;
+  line-height: 4;
   align-self: center;
 }
 
@@ -52,11 +52,11 @@
   color: black;
   font-weight: 200;
   grid-column: 3/4;
-  line-height: 2.5;
+  line-height: 4;
 }
 
 .skills-rating2 {
-  line-height: 2.5;
+  line-height: 4;
   align-self: center;
 }
 
@@ -85,4 +85,10 @@
   .skills-rating2 {
     grid-column: 2/3;
   }
+
+  .skills-type, .skills-type2, .skills-rating, .skills-rating2 {
+    line-height: 2.5;
+  }
+
+
 }
