@@ -36,3 +36,17 @@ nav {
     margin-left: 1rem;
   }
 }
+
+
+@media screen and (max-width: 860px) {
+  nav {
+    padding: 0;
+    width: 100%;
+    li {
+      font-size: smaller;
+    }
+    img {
+      display: none;
+    }
+  }
+}
