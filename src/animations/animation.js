@@ -23,7 +23,7 @@ export const slideUpAnimation = {
 export const slideDownAnimation = {
   hidden: {
     opacity: 0,
-    y: 100,
+    y: 300,
   },
   show: {
     opacity: 1,
