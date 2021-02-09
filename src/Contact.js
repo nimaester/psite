@@ -7,21 +7,21 @@ const Contact = () => {
   const sendEmail = (event) => {
     event.preventDefault();
 
-    // emailjs
-    //   .sendForm(
-    //     "gmail",
-    //     "template_1fnqpcr",
-    //     event.target,
-    //     "user_7q9goxLOYdywpMLHQQLe3"
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log(result.text);
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //     }
-    //   );
+    emailjs
+      .sendForm(
+        "gmail",
+        "template_1fnqpcr",
+        event.target,
+        "user_7q9goxLOYdywpMLHQQLe3"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
     event.target.reset();
   };
 
