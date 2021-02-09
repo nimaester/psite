@@ -7,7 +7,7 @@ const Nav = () => {
   return (
     <nav>
       <ul className='nav-bar'>
-        <li>
+        <li className='initial'>
           <Link to='/'>Info & Projects</Link>
         </li>
         <li>
@@ -17,6 +17,7 @@ const Nav = () => {
           <Link to='/contact'>Contact Me</Link>
         </li>
       </ul>
+
       <ul className='links'>
         <li>
           <a href='https://www.linkedin.com/in/nimtayo/'>
