@@ -11,7 +11,10 @@
     padding-bottom: 6rem;
   }
   h3 {
-
+    font-size: 2rem;
+    color: #0d7377;
+    margin-bottom: 1rem;
+    font-weight: bold;
   }
   h4 {
     font-size: 1.5rem;
@@ -49,12 +52,12 @@
     h2 {
       font-size: 3.2rem;
     }
-  }
-  .desc-org {
-    display: none;
-  }
-  .edu-img {
-    max-width: 30vh;
-    margin-bottom: 1rem;
+    .desc-org {
+      display: none;
+    }
+    .edu-img {
+      max-width: 40vh;
+      margin-bottom: 1rem;
+    }
   }
 }
