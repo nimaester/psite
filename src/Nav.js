@@ -5,7 +5,8 @@ import logo from "./img/logo.png"
 const Nav = () => {
   return (
     <nav>
-    <img className="logo" src={logo} alt="" />
+    <h6>{""}</h6>
+      <img className="logo" src={logo} alt="" />
       <ul className='nav-bar'>
         <li className='initial'>
           <Link to='/'>Info & Projects</Link>

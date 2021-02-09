@@ -1,6 +1,6 @@
 nav {
   display: flex;
-  padding: 1rem 6rem 1rem 6rem;
+  padding: 3rem;
   background-color: #0d7377;
   justify-content: space-between;
   ul {
@@ -9,7 +9,7 @@ nav {
     align-items: center;
   }
   li {
-    margin-left: 3rem;
+    margin-left: 7rem;
     font-size: large;
   }
   a {
@@ -18,13 +18,18 @@ nav {
     font-size: 1.2rem;
   }
   .logo {
-    width: 4rem;
+    width: 10rem;
+    position: absolute;
+    top: 1;
+    left: 1;
   }
 }
 
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 865px) {
   nav {
+    padding: 3rem 1rem 3rem 1rem;
+    justify-content: center;
     li {
       margin-left: 2rem;
     }
