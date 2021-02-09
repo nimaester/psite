@@ -35,18 +35,35 @@ const Contact = () => {
     >
       <form className='contact-form' onSubmit={sendEmail}>
         <div className='name'>
-
-          <input className="input-name" placeholder='Your Name' type='text' name='name' required/>
+          <input
+            className='input-name'
+            spellCheck='false'
+            placeholder='Your Name'
+            type='text'
+            name='name'
+            required
+          />
         </div>
 
         <div className='email'>
-
-          <input className="input-email" placeholder='Your Email' type='email' name='email' required/>
+          <input
+            className='input-email'
+            spellCheck='false'
+            placeholder='Your Email'
+            type='email'
+            name='email'
+            required
+          />
         </div>
 
         <div className='message'>
-
-          <textarea className="input-message" placeholder='Your Message' name='message' required/>
+          <textarea
+            className='input-message'
+            spellCheck='false'
+            placeholder='Your Message'
+            name='message'
+            required
+          />
         </div>
         <div>
           <input className='send' type='submit' value='Send' />
