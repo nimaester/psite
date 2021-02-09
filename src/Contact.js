@@ -1,13 +1,19 @@
 import React from "react";
-import emailjs from 'emailjs-com';
+import emailjs from "emailjs-com";
 import { slideUpAnimation } from "./animations/animation";
 import { motion } from "framer-motion";
 
 const Contact = () => {
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const sendEmail = (event) => {
+    event.preventDefault();
 
-    emailjs.sendForm("gmail", "template_1fnqpcr", e.target, "user_7q9goxLOYdywpMLHQQLe3")
+    emailjs
+      .sendForm(
+        "gmail",
+        "template_1fnqpcr",
+        event.target,
+        "user_7q9goxLOYdywpMLHQQLe3"
+      )
       .then(
         (result) => {
           console.log(result.text);
@@ -16,7 +22,7 @@ const Contact = () => {
           console.log(error.text);
         }
       );
-      e.target.reset();
+    event.target.reset();
   };
 
   return (
@@ -28,13 +34,23 @@ const Contact = () => {
       exit='exit'
     >
       <form className='contact-form' onSubmit={sendEmail}>
-        <label>Name</label>
-        <input type='text' name='name' />
-        <label>Email</label>
-        <input type='email' name='email' />
-        <label>Message</label>
-        <textarea name='message' />
-        <input type='submit' value='Send' />
+        <div className='name'>
+          <h2>Name</h2>
+          <input className="input-name" type='text' name='name' />
+        </div>
+
+        <div className='email'>
+          <h2>Email</h2>
+          <input className="input-email" type='email' name='email' />
+        </div>
+
+        <div className='message'>
+          <h2>Message</h2>
+          <textarea className="input-message" name='message' />
+        </div>
+        <div className='send'>
+          <input type='submit' value='Send' />
+        </div>
       </form>
     </motion.div>
   );

@@ -36,7 +36,7 @@ export const slideDownAnimation = {
 
 export const slideLeftAnimation = {
   hidden: {
-    x: -600,
+    x: -900,
   },
   show: {
     x: 0,
