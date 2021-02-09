@@ -14,10 +14,11 @@ const AboutMain = () => {
       exit="exit"
     >
       <About />
-      <Services />
-      <Questions />
     </motion.div>
   );
 };
 
 export default AboutMain;
+
+// <Services />
+//       <Questions />

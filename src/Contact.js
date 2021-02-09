@@ -7,21 +7,21 @@ const Contact = () => {
   const sendEmail = (event) => {
     event.preventDefault();
 
-    emailjs
-      .sendForm(
-        "gmail",
-        "template_1fnqpcr",
-        event.target,
-        "user_7q9goxLOYdywpMLHQQLe3"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    // emailjs
+    //   .sendForm(
+    //     "gmail",
+    //     "template_1fnqpcr",
+    //     event.target,
+    //     "user_7q9goxLOYdywpMLHQQLe3"
+    //   )
+    //   .then(
+    //     (result) => {
+    //       console.log(result.text);
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //     }
+    //   );
     event.target.reset();
   };
 
@@ -35,21 +35,21 @@ const Contact = () => {
     >
       <form className='contact-form' onSubmit={sendEmail}>
         <div className='name'>
-          <h2>Name</h2>
-          <input className="input-name" type='text' name='name' />
+
+          <input className="input-name" placeholder='Your Name' type='text' name='name' required/>
         </div>
 
         <div className='email'>
-          <h2>Email</h2>
-          <input className="input-email" type='email' name='email' />
+
+          <input className="input-email" placeholder='Your Email' type='email' name='email' required/>
         </div>
 
         <div className='message'>
-          <h2>Message</h2>
-          <textarea className="input-message" name='message' />
+
+          <textarea className="input-message" placeholder='Your Message' name='message' required/>
         </div>
-        <div className='send'>
-          <input type='submit' value='Send' />
+        <div>
+          <input className='send' type='submit' value='Send' />
         </div>
       </form>
     </motion.div>

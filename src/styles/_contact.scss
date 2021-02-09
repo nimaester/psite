@@ -1,5 +1,5 @@
 .contact{
-  padding: 6rem 5rem 0rem 5rem;
+  padding: 6rem 5rem 6rem 5rem;
   .contact-form {
     display: flex;
     flex-direction: column;
@@ -20,8 +20,8 @@
   }
 
   .input-message {
-    width: 150%;
-    height: 20vh;
+    width: 100%;
+    height: 22vh;
     background-color: #3D444A;
     border: 1px solid rgba(253, 251, 245, 0.3);
     margin-bottom: 3vh;
@@ -29,6 +29,20 @@
     font-size: 1.2rem;
     color: #FDFBF5;
     outline: none;
+    padding-top: 5%;
   }
 
+  .send {
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border: 3px solid #0d7377;
+    background: transparent;
+    color: white;
+    transition: all 0.5s ease;
+    &:hover{
+      background-color: #0d7377;
+    }
+  }
 }
