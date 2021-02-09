@@ -21,22 +21,23 @@ hr {
   border:none;
   background-color: #0d7377;
   text-align:center;
-  margin: 5rem 0 0 0;
 }
 
 .quotee {
   font-style: italic;
   color: gray;
-  text-align: center
+  text-align: center;
+  padding-bottom: 6rem;
+
 }
 
 @media screen and (max-width: 860px) {
-  .quotes {
-    font-size: small
-  }
-  .quotee {
-    font-size: small
-  }
+  // .quotes {
+  //   font-size: large;
+  // }
+  // .quotee {
+  //   font-size: large;
+  // }
 }
 
 @import "./about";

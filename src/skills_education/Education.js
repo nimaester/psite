@@ -37,7 +37,7 @@ const Education = () => {
 
       <div className='education-container'>
         <div className='name-of-org'>
-          <h2>Online Courses</h2>
+          <h3>Online Courses</h3>
         </div>
         <div className='certs'>
           <a href='https://www.udemy.com/certificate/UC-ce06ce8f-5916-4795-b4c6-04da02d1c8ac/'>

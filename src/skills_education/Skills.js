@@ -15,7 +15,7 @@ const Skills = () => {
                   starRatedColor='#11999e'
                   starEmptyColor='grey'
                   rating={5}
-                  starDimension='20px'
+                  starDimension='30px'
                   starSpacing='0.1px'
                 />
               </span>
@@ -28,7 +28,7 @@ const Skills = () => {
                   starRatedColor='#11999e'
                   starEmptyColor='grey'
                   rating={5}
-                  starDimension='20px'
+                  starDimension='30px'
                   starSpacing='0.1px'
                 />
               </span>
@@ -40,7 +40,7 @@ const Skills = () => {
                   starRatedColor='#11999e'
                   starEmptyColor='grey'
                   rating={5}
-                  starDimension='20px'
+                  starDimension='30px'
                   starSpacing='0.1px'
                 />
               </span>
@@ -52,7 +52,7 @@ const Skills = () => {
                   starRatedColor='#11999e'
                   starEmptyColor='grey'
                   rating={5}
-                  starDimension='20px'
+                  starDimension='30px'
                   starSpacing='0.1px'
                 />
               </span>
@@ -64,7 +64,7 @@ const Skills = () => {
                   starRatedColor='#11999e'
                   starEmptyColor='grey'
                   rating={5}
-                  starDimension='20px'
+                  starDimension='30px'
                   starSpacing='0.1px'
                 />
               </span>
@@ -77,7 +77,7 @@ const Skills = () => {
                   starRatedColor='#11999e'
                   starEmptyColor='grey'
                   rating={5}
-                  starDimension='20px'
+                  starDimension='30px'
                   starSpacing='0.1px'
                 />
               </span>
@@ -90,7 +90,7 @@ const Skills = () => {
                   starRatedColor='#11999e'
                   starEmptyColor='grey'
                   rating={5}
-                  starDimension='20px'
+                  starDimension='30px'
                   starSpacing='0.1px'
                 />
               </span>
@@ -102,7 +102,7 @@ const Skills = () => {
                   starRatedColor='#11999e'
                   starEmptyColor='grey'
                   rating={5}
-                  starDimension='20px'
+                  starDimension='30px'
                   starSpacing='0.1px'
                 />
               </span>
@@ -114,7 +114,7 @@ const Skills = () => {
                   starRatedColor='#11999e'
                   starEmptyColor='grey'
                   rating={4.5}
-                  starDimension='20px'
+                  starDimension='30px'
                   starSpacing='0.1px'
                 />
               </span>
@@ -131,11 +131,25 @@ const Skills = () => {
                   starRatedColor='#11999e'
                   starEmptyColor='grey'
                   rating={4}
-                  starDimension='20px'
+                  starDimension='30px'
                   starSpacing='0.1px'
                 />
               </span>
             </li>
+
+            <li className='tech-skills'>
+              <span className='skills-type2'>Mocha/Chai</span>
+              <span className='skills-rating2'>
+                <StarRatings
+                  starRatedColor='#11999e'
+                  starEmptyColor='grey'
+                  rating={4}
+                  starDimension='30px'
+                  starSpacing='0.1px'
+                />
+              </span>
+            </li>
+
             <li className='tech-skills'>
               <span className='skills-type2'>Ruby</span>
               <span className='skills-rating2'>
@@ -143,7 +157,7 @@ const Skills = () => {
                   starRatedColor='#11999e'
                   starEmptyColor='grey'
                   rating={4}
-                  starDimension='20px'
+                  starDimension='30px'
                   starSpacing='0.1px'
                 />
               </span>
@@ -156,7 +170,7 @@ const Skills = () => {
                   starRatedColor='#11999e'
                   starEmptyColor='grey'
                   rating={3.8}
-                  starDimension='20px'
+                  starDimension='30px'
                   starSpacing='0.1px'
                 />
               </span>
@@ -168,7 +182,7 @@ const Skills = () => {
                   starRatedColor='#11999e'
                   starEmptyColor='grey'
                   rating={3.5}
-                  starDimension='20px'
+                  starDimension='30px'
                   starSpacing='0.1px'
                 />
               </span>
@@ -180,7 +194,7 @@ const Skills = () => {
                   starRatedColor='#11999e'
                   starEmptyColor='grey'
                   rating={3.5}
-                  starDimension='20px'
+                  starDimension='30px'
                   starSpacing='0.1px'
                 />
               </span>
@@ -192,7 +206,7 @@ const Skills = () => {
                   starRatedColor='#11999e'
                   starEmptyColor='grey'
                   rating={3.5}
-                  starDimension='20px'
+                  starDimension='30px'
                   starSpacing='0.1px'
                 />
               </span>
@@ -204,7 +218,7 @@ const Skills = () => {
                   starRatedColor='#11999e'
                   starEmptyColor='grey'
                   rating={3.2}
-                  starDimension='20px'
+                  starDimension='30px'
                   starSpacing='0.1px'
                 />
               </span>
@@ -216,7 +230,7 @@ const Skills = () => {
                   starRatedColor='#11999e'
                   starEmptyColor='grey'
                   rating={3}
-                  starDimension='20px'
+                  starDimension='30px'
                   starSpacing='0.1px'
                 />
               </span>

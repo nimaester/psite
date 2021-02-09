@@ -1,97 +1,40 @@
 .skills {
-  padding: 6rem 10% 0rem 10%;
-  span {
-    color: white;
-  }
-  h2 {
-    text-align: center;
-    font-weight: lighter;
-    font-size: 4rem;
-    color:  #0d7377;
-
-  }
-}
-
-.section {
-  display: grid;
-  grid-template-columns: repeat(2, 100px);
-  justify-content: center;
+  padding: 6rem 5rem 0rem 5rem;
   text-align: center;
-  padding: 6rem;
+  color: white;
+  h2 {
+    font-weight: lighter;
+    font-size: 3.5rem;
+    color:  #0d7377;
+    padding-bottom: 6rem;
+  }
+  .section {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4rem;
 
-}
+  }
 
-.section-1 {
-  grid-column: 1/2;
-}
-
-.section-2 {
-  grid-column: 2/3;
-}
-
-.tech-skills {
-  display: grid;
-  grid-template-columns: repeat(4, 180px);
-  justify-content: center;
-  align-content: center;
-}
-
-.skills-type {
-  grid-column: 1/2;
-  line-height: 4;
-}
-
-.skills-rating {
-  line-height: 4;
-  // align-self: center;
-}
-
-.skills-type2 {
-  grid-column: 3/4;
-  line-height: 4;
-}
-
-.skills-rating2 {
-  line-height: 4;
-  // align-self: center;
-}
-
-.skills-rating:hover, .skills-rating2:hover {
-  transform: scale(1.2);
+  .tech-skills {
+    display: grid;
+    grid-template-columns: 160px 210px;
+    justify-content: center;
+    align-content: center;
+    line-height: 4rem;
+  }
+  .skills-rating:hover, .skills-rating2:hover {
+    transform: scale(1.2);
+  }
 }
 
 @media screen and (max-width: 860px) {
   .skills {
-    padding: 0;
     h2 {
-      font-size: 2rem;
+      font-size: 3.2rem;
     }
   }
   .section {
-    display: flex;
     flex-wrap: wrap;
-    padding: 6rem 1rem 0rem 1rem ;
   }
-
-  .tech-skills {
-    grid-template-columns: 50% 70%;
-  }
-
-  .skills-type, .skills-type2 {
-    font-size: auto;
-  }
-
-  .skills-type2 {
-    grid-column: 1/2;
-  }
-
-  .skills-rating2 {
-    grid-column: 2/3;
-  }
-
-  .skills-type, .skills-type2, .skills-rating, .skills-rating2 {
-    line-height: 2.5;
-  }
-
 
 }
