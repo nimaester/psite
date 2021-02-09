@@ -27,12 +27,12 @@ const About = () => {
             <br />
             <br />
           </div>
-          <button onClick={redirect}>Contact Me</button>
+          <motion.button variants={fadeAnimation} onClick={redirect}>Contact Me</motion.button>
         </motion.div>
       </div>
-      <motion.div variants={fadeAnimation} className='image'>
+      <div className='image'>
         <img src={home1} alt='' />
-      </motion.div>
+      </div>
     </div>
   );
 };

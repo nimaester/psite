@@ -1,10 +1,12 @@
 import React from "react";
 import StarRatings from "react-star-ratings";
+import {motion} from "framer-motion";
+import {fadeAnimation, slideLeftAnimation} from "../animations/animation";
 
 const Skills = () => {
   return (
     <div className='skills'>
-      <h2>Technical Skills</h2>
+      <motion.h2 variants={slideLeftAnimation}>Technical Skills</motion.h2>
       <div className='section'>
         <div className='section-1'>
           <ul>
@@ -249,9 +251,3 @@ const Skills = () => {
 };
 
 export default Skills;
-
-// <p className='quotes'>
-// "Everybody should learn to program a computer, because it teaches you
-// how to think."
-// </p>
-// <p className='quotee'>-- Steve Jobs</p>
