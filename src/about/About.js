@@ -1,7 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import { motion } from "framer-motion";
-import { slideLeftAnimation, slideDownAnimation } from "../animations/animation";
+import { slideLeftAnimation, slideDownAnimation, fadeAnimation } from "../animations/animation";
 
 const About = () => {
   const home1 = "https://ntgnrlbkt.s3-us-west-1.amazonaws.com/nim-crop.jpg";
@@ -19,7 +19,7 @@ const About = () => {
         <motion.div className='title' variants={slideLeftAnimation}>
           <div className='hide'>
             <h2>
-              I'm <motion.span variants={slideDownAnimation} style={{ color: "#0d7377" }}>Nim,</motion.span>
+              I'm <motion.span variants={fadeAnimation} style={{ color: "#0d7377" }}>Nim,</motion.span>
             </h2>
           </div>
           <div className='hide'>
@@ -30,7 +30,7 @@ const About = () => {
           <button onClick={redirect}>Contact Me</button>
         </motion.div>
       </div>
-      <motion.div className='image'>
+      <motion.div variants={fadeAnimation} className='image'>
         <img src={home1} alt='' />
       </motion.div>
     </div>

@@ -19,6 +19,3 @@ const AboutMain = () => {
 };
 
 export default AboutMain;
-
-// <Services />
-//       <Questions />

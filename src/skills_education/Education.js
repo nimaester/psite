@@ -1,11 +1,13 @@
 import React from "react";
 import hrlogo from "../img/hrlogo.png";
 import ccsflogo from "../img/ccsflogo.png";
+import {motion} from "framer-motion";
+import {fadeAnimation} from "../animations/animation";
 
 const Education = () => {
   return (
     <div className='education'>
-      <h2 className="title">Education</h2>
+      <motion.h2 variants={fadeAnimation} className="title">Education</motion.h2>
       <div className='education-container'>
         <div className='name-of-org'>
           <a href='https://bit.ly/3pIwnUt'>
