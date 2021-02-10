@@ -1,4 +1,5 @@
 import React from "react";
+import csguy from "../img/csguy.png"
 import { useHistory } from "react-router-dom";
 import { motion } from "framer-motion";
 import { slideLeftAnimation, slideDownAnimation, fadeAnimation } from "../animations/animation";
@@ -31,7 +32,7 @@ const About = () => {
         </motion.div>
       </div>
       <div className='image'>
-        <img src={home1} alt='' />
+        <img src={csguy} alt='' />
       </div>
     </div>
   );
