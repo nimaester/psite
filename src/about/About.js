@@ -16,7 +16,7 @@ const About = () => {
   };
 
   return (
-    <div className="ab">
+    <div>
     <div className='about'>
       <div className='description'>
         <motion.div className='title' variants={slideLeftAnimation}>
@@ -34,7 +34,7 @@ const About = () => {
         </motion.div>
       </div>
       </div>
-      <hr />
+      <hr className="ab"/>
     </div>
   );
 };

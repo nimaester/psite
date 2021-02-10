@@ -1,8 +1,11 @@
-import React from 'react';
+import React,{Fragment} from 'react';
+import {motion} from 'framer-motion';
+import {fadeAnimation, slideLeftAnimation} from '../animations/animation'
 
 const AboutMe = () => {
   const home1 = "https://ntgnrlbkt.s3-us-west-1.amazonaws.com/nim-crop.jpg";
   return (
+    <Fragment>
     <div className="about-me">
       <h2>About Me</h2>
       <div className="cards">
@@ -20,6 +23,8 @@ const AboutMe = () => {
         </div>
       </div>
     </div>
+    <hr className="ab"/>
+    </Fragment>
   );
 };
 

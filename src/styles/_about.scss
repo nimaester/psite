@@ -5,6 +5,8 @@
   color: white;
   justify-content: center;
   min-height: 90vh;
+  background-image: url('../img//wallpaper.png');
+  background-position: center 0%;
 
   h2 {
     font-weight: lighter;
@@ -84,18 +86,24 @@
     .my-pic, .bio {
       max-width: 100vh;
       max-height: 80vh;
-      min-height: 60vh;
+      min-height: 45vh;
       object-fit: contain;
     }
   }
 }
 
 .bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 1rem 1rem 1rem 2rem;
-  min-width: 45vh;
+  min-width: 25vh;
   text-align: left;
 }
 
+.ab {
+  margin: 0rem 6rem 0rem 6rem;
+}
 
 @media screen and (max-width: 865px) {
   .about {
@@ -120,6 +128,6 @@
         font-size: 1.2rem;
       }
     }
-
   }
+
 }
