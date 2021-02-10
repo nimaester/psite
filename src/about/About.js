@@ -34,7 +34,6 @@ const About = () => {
         </motion.div>
       </div>
       </div>
-      <hr className="ab"/>
     </div>
   );
 };
