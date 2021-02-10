@@ -6,6 +6,7 @@ import { slideLeftAnimation, slideDownAnimation, fadeAnimation } from "../animat
 
 const About = () => {
   const home1 = "https://ntgnrlbkt.s3-us-west-1.amazonaws.com/nim-crop.jpg";
+  const background = "https://www.wallpapertip.com/wmimgs/237-2372006_cybersecurity-wallpaper.jpg"
 
   const history = useHistory();
 
@@ -31,9 +32,7 @@ const About = () => {
           <motion.button variants={fadeAnimation} onClick={redirect}>Contact Me</motion.button>
         </motion.div>
       </div>
-      <div className='image'>
-        <img src={csguy} alt='' />
-      </div>
+
     </div>
   );
 };
