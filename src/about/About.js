@@ -16,6 +16,7 @@ const About = () => {
   };
 
   return (
+    <div className="ab">
     <div className='about'>
       <div className='description'>
         <motion.div className='title' variants={slideLeftAnimation}>
@@ -32,7 +33,8 @@ const About = () => {
           <motion.button variants={fadeAnimation} onClick={redirect}>Contact Me</motion.button>
         </motion.div>
       </div>
-
+      </div>
+      <hr />
     </div>
   );
 };

@@ -1,10 +1,11 @@
-
 .about {
   display: flex;
   align-items: center;
-  padding: 10rem 6rem 10rem 6rem;
+  padding: 0rem 6rem 0rem 6rem;
   color: white;
   justify-content: center;
+  min-height: 90vh;
+
   h2 {
     font-weight: lighter;
     font-size: 3rem;
@@ -23,44 +24,102 @@
     }
   }
   .description {
-    padding-top: 10rem;
-  }
-}
-
-.hide {
-  overflow: hidden;
-}
-
-button {
-  font-weight: bold;
-  font-size: 1.1rem;
-  cursor: pointer;
-  padding: 1rem 2rem;
-  border: 3px solid #0d7377;
-  background: transparent;
-  color: white;
-  transition: all 0.5s ease;
-  &:hover{
-    background-color: #0d7377;
-
-  }
-}
-
-
-@media screen and (max-width: 860px) {
-  .about {
-    flex-direction: column;
-    padding: 1rem 10%;
-  }
-  .description {
-    padding-top: 3rem;
-    margin: auto;
-    text-align: center;
-    h2 {
-      font-size: 3rem;
-    }
+    padding-top: -20rem;
   }
   button {
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border: 3px solid #0d7377;
+    background: transparent;
+    color: white;
+    transition: all 0.5s ease;
+    &:hover{
+      background-color: #0d7377;
+
+    }
+  }
+  .hide {
+    overflow: hidden;
+  }
+}
+
+.about-me {
+  text-align: center;
+  padding: 6rem 5rem 6rem 5rem;
+  h2, h3, h4, h5 {
+    color: white;
+    font-weight: lighter;
+  }
+  h2 {
+    font-size: 3.5rem;
+    color: #0d7377;
+    padding-bottom: 6rem;
+  }
+  h3 {
+    font-size: 2rem;
+    color: #0d7377;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  h4 {
+    font-size: 1.5rem;
+    color: #0d7377;
+    margin-bottom: 1rem;
+  }
+  a {
+    text-decoration: none;
+  }
+  p {
+    color: #cccccc;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+  .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     width: 100%;
+    .my-pic, .bio {
+      max-width: 100vh;
+      max-height: 80vh;
+      min-height: 60vh;
+      object-fit: contain;
+    }
+  }
+}
+
+.bio {
+  padding: 1rem 1rem 1rem 2rem;
+  min-width: 45vh;
+  text-align: left;
+}
+
+
+@media screen and (max-width: 865px) {
+  .about {
+    flex-direction: column;
+    button {
+      width: 100%;
+    }
+    .description {
+      margin: auto;
+      text-align: center;
+      h2 {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  .about-me {
+    padding: 6rem 1rem 6rem 1rem;
+    .cards {
+      flex-wrap: wrap;
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
   }
 }

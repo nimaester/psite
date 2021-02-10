@@ -1,7 +1,6 @@
 import React from 'react';
 import About from './about/About';
-// import Services from './about//Services';
-// import Questions from './about/Questions';
+import AboutMe from './about/AboutMe';
 import {motion} from 'framer-motion';
 import {slideUpAnimation} from './animations/animation'
 
@@ -14,6 +13,7 @@ const AboutMain = () => {
       exit="exit"
     >
       <About />
+      <AboutMe />
     </motion.div>
   );
 };

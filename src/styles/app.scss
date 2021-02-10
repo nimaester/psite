@@ -21,6 +21,7 @@ hr {
   border:none;
   background-color: #0d7377;
   text-align:center;
+
 }
 
 .quotee {
@@ -41,9 +42,10 @@ hr {
 }
 
 
-
 @media screen and (max-width: 865px) {
-
+  .about-main {
+    padding: 0rem 1rem 0rem 1rem;
+  }
 }
 
 @import "./about";
