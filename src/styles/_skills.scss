@@ -16,7 +16,7 @@
 
   .tech-skills {
     display: grid;
-    grid-template-columns: 160px 210px;
+    grid-template-columns: 13rem 13rem;
     justify-content: center;
     align-content: center;
     line-height: 4rem;
@@ -28,15 +28,36 @@
 
 @media screen and (max-width: 865px) {
   .skills {
+    padding: 6rem 2rem 0rem 2rem;
     h2 {
       font-size: 3rem;
     }
     .tech-skills {
+      width: fit-content;
       line-height: 2.5rem;
+      grid-template-columns: 18rem 20rem;
+
     }
   }
   .section {
     flex-wrap: wrap;
   }
+}
 
+@media screen and (max-width: 420px) {
+  .skills {
+    padding-top: 4rem;
+    h2 {
+      font-size: 2rem;
+      padding-bottom: 4rem;
+    }
+    .tech-skills {
+      width: fit-content;
+      line-height: 2.5rem;
+      grid-template-columns: 8rem 12rem;
+    }
+  }
+  .section {
+    flex-wrap: wrap;
+  }
 }

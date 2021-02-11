@@ -1,11 +1,7 @@
 import React, { Fragment } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import {
-  fadeAnimation,
-  slideLeftAnimation,
-  slideDownAnimation,
-} from "../animations/animation";
+import { slideDownAnimation } from "../animations/animation";
 
 const AboutMe = () => {
   const home1 = "https://ntgnrlbkt.s3-us-west-1.amazonaws.com/nim-crop.jpg";
@@ -44,7 +40,6 @@ const AboutMe = () => {
           <div className='about-me-pic'>
             <img className='my-pic' src={home1} alt='' />
           </div>
-
         </div>
       </motion.div>
       <hr className='ab' />

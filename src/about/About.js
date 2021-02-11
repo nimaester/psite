@@ -1,15 +1,11 @@
 import React from "react";
-// import csguy from "../img/csguy.png"
 import { useHistory } from "react-router-dom";
 import { motion } from "framer-motion";
 import { slideLeftAnimation, fadeAnimation } from "../animations/animation";
 
 const About = () => {
-  // const home1 = "https://ntgnrlbkt.s3-us-west-1.amazonaws.com/nim-crop.jpg";
-  // const background = "https://www.wallpapertip.com/wmimgs/237-2372006_cybersecurity-wallpaper.jpg"
 
   const history = useHistory();
-
   const redirect = () => {
     let path = "/contact";
     history.push(path);

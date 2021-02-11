@@ -1,7 +1,7 @@
 import React from "react";
 import StarRatings from "react-star-ratings";
-import {motion} from "framer-motion";
-import {fadeAnimation, slideLeftAnimation} from "../animations/animation";
+import { motion } from "framer-motion";
+import { slideLeftAnimation } from "../animations/animation";
 
 const Skills = () => {
   return (
@@ -245,7 +245,7 @@ const Skills = () => {
         how to think."
       </p>
       <p className='quotee'>-- Steve Jobs</p>
-      <hr/>
+      <hr />
     </div>
   );
 };
