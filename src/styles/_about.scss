@@ -19,10 +19,9 @@
   .image {
     flex: 1;
     img {
-      max-width: 100%;
-      max-height: 70vh;
-      min-height: 50vh;
-      object-fit: contain;
+      max-width: 110vh;
+      max-height: 80vh;
+      min-height: 90vh;
     }
   }
   .description {
@@ -50,6 +49,7 @@
 .about-me {
   text-align: center;
   padding: 6rem 5rem 6rem 5rem;
+  background-color: #212121;
   h2, h3, h4, h5 {
     color: white;
     font-weight: lighter;
@@ -74,9 +74,9 @@
     text-decoration: none;
   }
   p {
-    color: #cccccc;
+    color: #949494;
     margin-bottom: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .cards {
     display: flex;
@@ -84,17 +84,17 @@
     justify-content: center;
     align-items: center;
     .my-pic {
-      max-width: 100vh;
-      max-height: 80vh;
-      min-height: 45vh;
+      min-width: 300px;
+      max-width: 300px;
       object-fit: contain;
       padding: 1rem;
     }
     .bio {
 
-      padding: 8rem 1rem 1rem 2rem;
-      min-width: 450px;
-      max-width: 450px;
+      padding: 1rem;
+      min-width: 400px;
+      max-width: 400px;
+      font-size: 1.5rem;
       text-align: left;
     }
   }
@@ -122,7 +122,7 @@
   }
 
   .about-me {
-    padding: 6rem 0.5rem 6rem 0.5rem;
+    padding: 6rem 1rem 6rem 1rem;
     h2 {
       font-size: 3rem;
       padding-bottom: 2rem;
@@ -133,9 +133,12 @@
         font-size: 1.2rem;
       }
       .bio {
-        padding-top: 1rem;
-        min-width: 360px;
-        max-width: 360px;
+        min-width: 340px;
+        max-width: 340px;
+      }
+      .my-pic {
+        min-width: 340px;
+        max-width: 340px;
       }
     }
   }
@@ -152,7 +155,7 @@
     .description {
       margin: auto;
       h2 {
-        font-size: 3rem;
+        font-size: 2.5rem;
       }
     }
   }
@@ -160,7 +163,7 @@
   .about-me {
     padding: 5rem 0.5rem 5rem 0.5rem;
     h2 {
-      font-size: 3rem;
+      font-size: 2.5rem;
       padding-bottom: 2rem;
     }
     .cards {
@@ -168,11 +171,12 @@
       p {
         font-size: 1rem;
       }
-      .bio {
+      .bio, .my-pic {
         padding-top: 1rem;
         min-width: 90%;
         max-width: 90%;
       }
+
     }
   }
 

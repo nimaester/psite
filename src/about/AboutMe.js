@@ -40,6 +40,9 @@ const AboutMe = () => {
           <div className='about-me-pic'>
             <img className='my-pic' src={home1} alt='' />
           </div>
+          <div className="links">
+            <a></a>
+          </div>
         </div>
       </motion.div>
       <hr className='ab' />
