@@ -37,13 +37,14 @@ export const slideDownAnimation = {
 export const slideLeftAnimation = {
   hidden: {
     x: -900,
-    opacity: 0,
+    // opacity: 0,
   },
   show: {
     x: 0,
-    opacity: 1,
+    // opacity: 1,
     transition: {
-      duration: 0.5, ease: "easeOut",
+      duration: 0.5,
+      ease: "easeOut",
       when: "beforeChildren"
     }
   }
@@ -56,9 +57,23 @@ export const fadeAnimation = {
   show: {
     opacity: 1,
     transition: {
-      duration: 0.9,
+      duration: 2,
       ease: "easeOut",
-      // when: "beforeChildren"
+      when: "beforeChildren"
+    }
+  }
+}
+
+export const slideLeftAnimation2 = {
+  hidden: {
+    opacity: 0
+  },
+  show: {
+    opacity: 1,
+    transition: {
+      duration: 2,
+      ease: "easeOut",
+      when: "beforeChildren"
     }
   }
 }

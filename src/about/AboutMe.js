@@ -1,6 +1,6 @@
 import React,{Fragment} from 'react';
-import {motion} from 'framer-motion';
-import {fadeAnimation, slideLeftAnimation} from '../animations/animation'
+// import {motion} from 'framer-motion';
+// import {fadeAnimation, slideLeftAnimation} from '../animations/animation'
 
 const AboutMe = () => {
   const home1 = "https://ntgnrlbkt.s3-us-west-1.amazonaws.com/nim-crop.jpg";

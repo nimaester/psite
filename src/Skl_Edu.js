@@ -1,13 +1,13 @@
 import React from "react";
 import Education from "./skills_education/Education";
 import Skills from "./skills_education/Skills";
-import { motion,useAnimation } from "framer-motion";
-import { slideUpAnimation } from "./animations/animation";
-import {useInView} from 'react-intersection-observer';
+import { motion } from "framer-motion";
+import { slideUpAnimation,slideLeftAnimation, fadeAnimation} from "./animations/animation";
 
 
 
 const Skl_Edu = () => {
+
   return (
     <motion.div variants={slideUpAnimation} initial='hidden' animate='show' exit='exit'>
       <Skills />

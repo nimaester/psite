@@ -1,10 +1,22 @@
-import React from "react";
+import React, {useRef} from "react";
 import hrlogo from "../img/hrlogo.png";
 import ccsflogo from "../img/ccsflogo.png";
+import { useInView } from "react-intersection-observer";
+import { useAnimation } from "framer-motion";
+import {motion} from "framer-motion";
+import {slideLeftAnimation2, fadeAnimation} from  "../animations/animation";
 
 const Education = () => {
+
+  const controls = useAnimation();
+  const [element, view] = useInView({ threshold: 0.3 });
+  if (view) {
+    controls.start("show");
+  } else {
+    controls.start("hidden");
+  }
   return (
-    <div className='education'>
+    <motion.div variants={slideLeftAnimation2} animate={controls} initial="hidden" ref={element} className='education'>
       <h2 className="title">Education</h2>
       <div className='education-container'>
         <div className='name-of-org'>
@@ -58,7 +70,7 @@ const Education = () => {
         "Education is a progressive discovery of our own ignorance."
       </p>
       <p className='quotee'>-- Will Durant</p>
-    </div>
+    </motion.div>
   );
 };
 
