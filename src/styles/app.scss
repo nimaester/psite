@@ -11,10 +11,18 @@ body {
 }
 
 .quotes {
-  padding: 30px 0;
   font-style: italic;
-  color: gray;
+  color: gray !important;
   text-align: center;
+  padding-top: 6rem;
+  margin-bottom: 2rem !important;
+  font-size: 1rem !important;
+}
+.quotee {
+  font-style: italic;
+  color: gray !important;
+  text-align: center;
+  padding-bottom: 6rem;
 }
 
 hr {
@@ -30,7 +38,6 @@ hr {
   color: gray;
   text-align: center;
   padding-bottom: 6rem;
-
 }
 
 .wave1 {
