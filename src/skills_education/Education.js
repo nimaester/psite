@@ -4,20 +4,22 @@ import ccsflogo from "../img/ccsflogo.png";
 import { useInView } from "react-intersection-observer";
 import { useAnimation } from "framer-motion";
 import {motion} from "framer-motion";
-import {slideLeftAnimation2, fadeAnimation} from  "../animations/animation";
+import {slideLeftAnimation, fadeAnimation, slideDownAnimation} from  "../animations/animation";
 
 const Education = () => {
 
   const controls = useAnimation();
-  const [element, view] = useInView({ threshold: 0.3 });
+  const [element, view] = useInView({ threshold: 0.1 });
   if (view) {
-    controls.start("show");
+    controls.start('show');
   } else {
-    controls.start("hidden");
+    controls.start('hidden');
   }
+  // initial='hidden' animate='show' exit='exit'
   return (
-    <motion.div variants={slideLeftAnimation2} animate={controls} initial="hidden" ref={element} className='education'>
-      <h2 className="title">Education</h2>
+
+    <motion.div variants={slideDownAnimation} initial="hidden" animate={controls} ref={element} className='education'>
+      <motion.h2 variants={slideLeftAnimation} initial="hidden" animate={controls} className="title">Education</motion.h2>
       <div className='education-container'>
         <div className='name-of-org'>
           <a href='https://bit.ly/3pIwnUt'>
