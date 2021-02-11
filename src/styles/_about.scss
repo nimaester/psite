@@ -91,7 +91,7 @@
     }
     .bio {
 
-      padding: 1rem;
+      padding: 6rem;
       min-width: 400px;
       max-width: 400px;
       font-size: 1.5rem;
@@ -103,6 +103,20 @@
 .ab {
   margin: 0rem 6rem 0rem 6rem;
 }
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.primary-icon {
+  margin-left: -4rem;
+  margin-right: 2rem;
+  margin-bottom: 3px;
+}
+
+
 
 
 @media screen and (max-width: 865px) {

@@ -2,6 +2,8 @@ import React, { Fragment } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { slideDownAnimation } from "../animations/animation";
+import fbLogo from "../img/fb.png"
+import linkLogo from "../img/linkin.png"
 
 const AboutMe = () => {
   const home1 = "https://ntgnrlbkt.s3-us-west-1.amazonaws.com/nim-crop.jpg";
@@ -28,21 +30,26 @@ const AboutMe = () => {
               Hayward CA and I am a software engineer with a background on
               management. I am eager to learn new things and I am a great team
               player. I've been always been fascinated with technology and that
-              led me to learn how to code. It's always fun (and irritating)
+              led me to learn how to code. It's always fun
               building things that I can imagine using software.
             </p>
 
             <p>
-              Reach out to nimtayo@gmail.com to connect! Can't wait to hear from
-              you.
+              Let's connect! Can't wait to hear from you.
             </p>
+            <div className="links">
+            <a href="https://www.facebook.com/nim.tayo.12">
+              <img className="primary-icon" src={fbLogo} alt="" />
+            </a>
+            <a href="https://www.linkedin.com/in/nimtayo/">
+              <img src={linkLogo} alt="" />
+            </a>
+          </div>
           </div>
           <div className='about-me-pic'>
             <img className='my-pic' src={home1} alt='' />
           </div>
-          <div className="links">
-            <a></a>
-          </div>
+
         </div>
       </motion.div>
       <hr className='ab' />
