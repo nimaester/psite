@@ -43,9 +43,9 @@ hr {
 
 
 @media screen and (max-width: 865px) {
-  .about-main {
-    padding: 0rem 1rem 0rem 1rem;
-  }
+  // * {
+  //   padding: 0rem 1rem 0rem 1rem;
+  // }
 }
 
 @import "./about";
