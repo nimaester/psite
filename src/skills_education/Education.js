@@ -9,17 +9,26 @@ import {slideLeftAnimation, fadeAnimation, slideDownAnimation} from  "../animati
 const Education = () => {
 
   const controls = useAnimation();
-  const [element, view] = useInView({ threshold: 0.2 });
+  const [element, view] = useInView();
   if (view) {
     controls.start('show');
   } else {
     controls.start('hidden');
   }
-  // initial='hidden' animate='show' exit='exit'
+
+  const control2 = useAnimation();
+  const [element2, view2] = useInView();
+  if (view2) {
+    control2.start('show')
+  } else {
+    control2.start('hidden')
+  }
+
   return (
 
     <motion.div variants={slideDownAnimation} initial="hidden" animate={controls} ref={element} className='education'>
       <h2 className="title">Education</h2>
+      <motion.div>
       <div className='education-container'>
         <div className='name-of-org'>
           <a href='https://bit.ly/3pIwnUt'>
@@ -66,7 +75,7 @@ const Education = () => {
           </a>
         </div>
       </div>
-
+      </motion.div>
       <p className='quotes'>
         {" "}
         "Education is a progressive discovery of our own ignorance."

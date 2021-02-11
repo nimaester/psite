@@ -31,6 +31,13 @@ export const slideDownAnimation = {
     transition: {
       duration: 0.8,
     }
+  },
+  exit: {
+    opacity: 0,
+    y: 300,
+    transition: {
+      duration: 0.8,
+    }
   }
 }
 
@@ -59,7 +66,7 @@ export const fadeAnimation = {
     transition: {
       duration: 2,
       ease: "easeOut",
-      when: "beforeChildren"
+      when: "afterChildren"
     }
   }
 }

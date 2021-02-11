@@ -30,10 +30,8 @@
     flex: 1;
     overflow: hidden;
     img {
-      max-width: 100%;
-      max-height: 90vh;
-      min-height: 85vh;
-      object-fit: cover;
+      width: auto;
+      max-height: 100%;
     }
   }
 }

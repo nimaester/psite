@@ -18,10 +18,9 @@ nav {
     font-size: 1.2rem;
   }
   .logo {
-    width: 10rem;
+    width: 5rem;
     position: absolute;
-    top: 1;
-    left: 1;
+    top: 0;
   }
 }
 
@@ -31,7 +30,7 @@ nav {
     padding: 3rem 1rem 3rem 1rem;
     justify-content: center;
     li {
-      margin-left: 2rem;
+      margin-left: 2px;
     }
     .logo {
       display: none;
