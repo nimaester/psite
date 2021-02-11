@@ -1,8 +1,11 @@
 import React from "react";
 import Education from "./skills_education/Education";
 import Skills from "./skills_education/Skills";
-import { motion } from "framer-motion";
+import { motion,useAnimation } from "framer-motion";
 import { slideUpAnimation } from "./animations/animation";
+import {useInView} from 'react-intersection-observer';
+
+
 
 const Skl_Edu = () => {
   return (
