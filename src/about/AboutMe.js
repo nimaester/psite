@@ -27,12 +27,7 @@ const AboutMe = () => {
         <div className='cards'>
           <div className='bio'>
             <p>
-              Hello there, my name is Nim Tayo. I am currently residing in
-              Hayward CA and I am a software engineer with a background on
-              management. I am eager to learn new things and I am a great team
-              player. I've been always been fascinated with technology and that
-              led me to learn how to code. It's always fun building things that
-              I can imagine using software.
+            Hello there! I am a full-stack software engineer with a background in management. I have a keen eye for details and I am versatile that can adapt to any situation. I love learning new things about coding. It's amazing that you can build things on a computer that you can imagine. My hobbies outside coding are taking walks, trying out new types of food, and collecting coins. Yep... I'm that guy.
             </p>
 
 
