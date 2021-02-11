@@ -1,12 +1,24 @@
 import React,{Fragment} from 'react';
-// import {motion} from 'framer-motion';
-// import {fadeAnimation, slideLeftAnimation} from '../animations/animation'
+import {motion, useAnimation} from 'framer-motion';
+import { useInView } from "react-intersection-observer";
+import {fadeAnimation, slideLeftAnimation, slideDownAnimation} from '../animations/animation'
+
 
 const AboutMe = () => {
   const home1 = "https://ntgnrlbkt.s3-us-west-1.amazonaws.com/nim-crop.jpg";
+  const controls = useAnimation();
+  const [element, view] = useInView({ threshold: 0.1 });
+  if (view) {
+    controls.start('show');
+  } else {
+    controls.start('hidden');
+  }
+
   return (
+
+
     <Fragment>
-    <div className="about-me">
+    <motion.div ref={element} variants={slideDownAnimation} initial="hidden" animate={controls}  className="about-me">
       <h2>About Me</h2>
       <div className="cards">
         <div className="about-me-pic">
@@ -22,7 +34,7 @@ const AboutMe = () => {
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
     <hr className="ab"/>
     </Fragment>
   );

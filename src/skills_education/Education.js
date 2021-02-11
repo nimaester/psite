@@ -9,7 +9,7 @@ import {slideLeftAnimation, fadeAnimation, slideDownAnimation} from  "../animati
 const Education = () => {
 
   const controls = useAnimation();
-  const [element, view] = useInView({ threshold: 0.1 });
+  const [element, view] = useInView({ threshold: 0.2 });
   if (view) {
     controls.start('show');
   } else {
@@ -19,7 +19,7 @@ const Education = () => {
   return (
 
     <motion.div variants={slideDownAnimation} initial="hidden" animate={controls} ref={element} className='education'>
-      <motion.h2 variants={slideLeftAnimation} initial="hidden" animate={controls} className="title">Education</motion.h2>
+      <h2 className="title">Education</h2>
       <div className='education-container'>
         <div className='name-of-org'>
           <a href='https://bit.ly/3pIwnUt'>
