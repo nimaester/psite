@@ -9,7 +9,6 @@
   h2 {
     font-size: 3.5rem;
     color: #0d7377;
-    padding-bottom: 6rem;
   }
   h3 {
     font-size: 2rem;
@@ -49,6 +48,9 @@
 @media screen and (max-width: 865px) {
   .education {
     padding: 6rem 2rem 0rem 2rem;
+    .title {
+      padding-bottom: 3rem;
+    }
     h2 {
       font-size: 3.2rem;
     }
@@ -59,6 +61,14 @@
       max-width: 40vh;
       margin-bottom: 1rem;
     }
+    .education-container {
+      padding: 1rem 0rem 0rem 0rem;
+      p {
+        line-height: 1rem;
+        font-size: 8px;
+      }
+    }
+
   }
 }
 
@@ -66,6 +76,25 @@
   .education {
     h2 {
       font-size: 2rem;
+    }
+    h4 {
+      font-size: 1rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+    .education-container {
+      p {
+        padding-top: -2rem;
+        font-size: 1rem !important;
+      }
+      .ol-school {
+        margin-top: -1rem;
+      }
+    }
+    .edu-img {
+      max-width: 30vh;
+      margin-bottom: 1rem;
     }
   }
 }

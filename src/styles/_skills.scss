@@ -20,6 +20,8 @@
     align-content: center;
     line-height: 4rem;
   }
+
+
   .skills-rating:hover, .skills-rating2:hover {
     transform: scale(1.2);
   }
@@ -27,7 +29,7 @@
 
 @media screen and (max-width: 865px) {
   .skills {
-    padding: 6rem 2rem 0rem 2rem;
+    padding: 6rem 1rem 0rem 1rem;
     h2 {
       font-size: 3rem;
     }
@@ -53,10 +55,11 @@
     .tech-skills {
       width: fit-content;
       line-height: 2.5rem;
-      grid-template-columns: 8rem 12rem;
+      grid-template-columns: 6rem 11rem;
     }
-  }
-  .section {
-    flex-wrap: wrap;
+    .skills-type, .skills-type2 {
+      padding-left: 1rem;
+      font-size: 1rem;
+    }
   }
 }

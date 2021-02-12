@@ -7,7 +7,7 @@ import linkLogo from "../img/linkin.png";
 import face from "../img/face.png";
 
 const AboutMe = () => {
-  const home1 = "https://ntgnrlbkt.s3-us-west-1.amazonaws.com/nim-crop.jpg";
+
   const controls = useAnimation();
   const [element, view] = useInView();
   if (view) {
@@ -27,7 +27,7 @@ const AboutMe = () => {
         <div className='cards'>
           <div className='bio'>
             <p>
-            Hello there! I am a full-stack software engineer with a background in management. I have a keen eye for details and I am versatile that can adapt to any situation. I love learning new things about coding. It's amazing that you can build things on a computer that you can imagine. My hobbies outside coding are taking walks, trying out new types of food, and collecting coins. Yep... I'm that guy.
+            Hello there! I am a full-stack software engineer with a background in management. I have a keen eye for details and I am versatile that can adapt to any situation. I love learning new things about coding. It's amazing that you can build things on a computer that you can imagine. My hobbies outside coding are taking walks, trying out new types of food, and learning photography.
             </p>
 
 
