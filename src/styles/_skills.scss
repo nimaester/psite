@@ -39,9 +39,8 @@
       font-size: 3rem;
     }
     .tech-skills {
-      width: fit-content;
       line-height: 2.5rem;
-      grid-template-columns: 12rem 12rem;
+      grid-template-columns: 11rem 14rem;
 
     }
   }
@@ -55,12 +54,9 @@
       padding-bottom: 4rem;
     }
     .tech-skills {
-      width: fit-content;
-      line-height: 2.5rem;
       grid-template-columns: 6rem 11rem;
     }
     .skills-type, .skills-type2 {
-      padding-left: 1rem;
       font-size: 1rem;
     }
   }

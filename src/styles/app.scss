@@ -33,13 +33,6 @@ hr {
 
 }
 
-.quotee {
-  font-style: italic;
-  color: gray;
-  text-align: center;
-  padding-bottom: 6rem;
-}
-
 .wave1 {
   position: absolute;
   top: 15%;
@@ -51,7 +44,9 @@ hr {
 
 
 @media screen and (max-width: 865px) {
-
+  .quotes {
+    padding-top: 3rem;
+  }
 }
 
 @import "./about";
