@@ -1,6 +1,6 @@
 .education{
   text-align: center;
-  padding: 6rem 5rem 0rem 5rem;
+  padding: 6rem 5rem 6rem 5rem;
   // background-color: #364B71;
   h2, h3, h4, h5 {
     color: white;
@@ -9,6 +9,7 @@
   h2 {
     font-size: 3.5rem;
     color: #0d7377;
+    padding-bottom: 6rem;
   }
   h3 {
     font-size: 2rem;
@@ -30,6 +31,7 @@
   }
 
   .education-container {
+    padding-bottom: 2rem;
     p {
       color: #cccccc;
       margin-bottom: 1rem;
@@ -51,21 +53,21 @@
     .title {
       padding-bottom: 3rem;
     }
-    h2 {
-      font-size: 3.2rem;
-    }
     .desc-org {
       display: none;
     }
     .edu-img {
-      max-width: 40vh;
+      max-width: 60vw;
       margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 3rem;
     }
     .education-container {
       padding: 1rem 0rem 0rem 0rem;
       p {
         line-height: 1rem;
-        font-size: 8px;
+        font-size: 1.2rem;
       }
     }
 
