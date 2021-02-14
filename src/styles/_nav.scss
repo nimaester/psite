@@ -13,7 +13,7 @@ nav {
     font-size: large;
   }
   a {
-    text-decoration: none!important;
+    text-decoration: none !important;
     color: white;
     font-size: 1.2rem;
   }
@@ -23,7 +23,6 @@ nav {
     top: 3%;
   }
 }
-
 
 @media screen and (max-width: 865px) {
   nav {
@@ -38,6 +37,5 @@ nav {
     a {
       font-size: smaller;
     }
-
   }
 }
