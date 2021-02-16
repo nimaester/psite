@@ -19,7 +19,7 @@ const Skl_Edu = () => {
       variants={slideUpAnimation}
       initial='hidden'
       animate={controls}
-      exit='exit'>
+    >
       <Skills />
       <Education />
     </motion.div>

@@ -3,7 +3,7 @@ import hrlogo from "../img/hrlogo.png";
 import ccsflogo from "../img/ccsflogo.png";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
-import { slideDownAnimation } from "../animations/animation";
+import { slideUpAnimation, slideRightAnimation } from "../animations/animation";
 
 const Education = () => {
 
@@ -13,14 +13,15 @@ const Education = () => {
 
   return (
     <motion.div
-      variants={slideDownAnimation}
+      variants={slideUpAnimation}
       initial='hidden'
       animate={controls}
-      exit='exit'
       ref={element}
       className='education'
+      id='education'
+      exit="exit"
     >
-      <h2 className='title'>Education</h2>
+      <motion.h2 variants={slideRightAnimation} initial='hidden' className='title'>Education</motion.h2>
       <motion.div>
         <div className='education-container'>
           <div className='name-of-org'>

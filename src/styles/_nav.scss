@@ -1,7 +1,7 @@
 nav {
   display: flex;
   padding: 3rem 6rem 3rem 6rem;
-  background-color: #0d7377;
+  background-color: black;
   justify-content: space-between;
   ul {
     list-style: none;
@@ -21,6 +21,9 @@ nav {
     width: 5rem;
     position: absolute;
     top: 3%;
+  }
+  li:hover {
+    cursor: pointer;
   }
 }
 

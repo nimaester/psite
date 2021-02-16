@@ -1,12 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from 'react-scroll';
 import logo from "./img/logo.png";
 
 const Nav = () => {
   return (
     <nav>
       <Link to='/'>
-        <img className='logo' src={logo} alt='' />
+        <i className="fas fa-home fa-2x"></i>
       </Link>
       <ul className='nav-bar'>
         <li className='initial'>
@@ -16,7 +16,7 @@ const Nav = () => {
           <Link to='/'>Projects</Link>
         </li>
         <li className='initial'>
-          <Link to='/'>Experience</Link>
+          <Link to='education' smooth={true} duration={1000}>Experience</Link>
         </li>
         <li>
           <Link to='/#skill'>Skills</Link>

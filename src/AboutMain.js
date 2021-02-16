@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import About from './about/About';
 import AboutMe from './about/AboutMe';
 import {motion} from 'framer-motion';
@@ -11,6 +11,7 @@ import Education from "./skills_education/Education";
 
 const AboutMain = () => {
   return (
+
     <motion.div
       variants={slideUpAnimation}
       initial="hidden"

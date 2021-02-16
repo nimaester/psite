@@ -22,7 +22,7 @@ const AboutMe = () => {
         animate={controls}
         className='about-me'
       >
-        <h2>Personal Info</h2>
+        <h2>About Me</h2>
         <div className='cards'>
           <div className='bio'>
             <p>
