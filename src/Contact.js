@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import emailjs from "emailjs-com";
 import { slideUpAnimation } from "./animations/animation";
 import { motion, useAnimation } from "framer-motion";
@@ -8,6 +8,8 @@ const Contact = () => {
 
   const controls = useAnimation();
   const [element, view] = useInView();
+  const [sent, setSent] = useState(false);
+
 
   view && controls.start("show")
 
@@ -24,6 +26,7 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          setSent(true);
         },
         (error) => {
           console.log(error.text);
