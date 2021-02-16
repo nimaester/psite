@@ -6,13 +6,16 @@ nav {
   position: sticky;
   top: 0;
   z-index: 10;
+
   ul {
     list-style: none;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
   li {
-    margin-left: 3.5rem;
+    padding-left: 3rem;
+    position: relative;
     font-size: large;
   }
   a {
@@ -28,6 +31,11 @@ nav {
   li:hover, fas:hover {
     cursor: pointer;
   }
+  .primary {
+    margin-left: -3rem;
+  }
+
+
 }
 
 @media screen and (max-width: 865px) {
@@ -40,11 +48,6 @@ nav {
     a {
       font-size: smaller;
     }
-    li {
-      margin-left: 1rem;
-    }
   }
-  .primary {
-    margin-left: -1rem;
-  }
+
 }

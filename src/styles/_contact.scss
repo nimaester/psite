@@ -1,5 +1,5 @@
 .contact{
-  height: 72vh;
+  height: 100vh;
   h2 {
     font-size: 3.5rem;
     color: #00adb5;
@@ -15,7 +15,7 @@
     justify-content: center;
   }
   .input-name, .input-email {
-    width: 25vw;
+    width: 80vw;
     height: 6vh;
     background-color: #222831;
     border: 1px solid rgba(253, 251, 245, 0.3);
@@ -29,7 +29,7 @@
   .input-message {
     width: 100%;
     height: 22vh;
-    width: 25vw;
+    width: 80vw;
     background-color: #222831;
     border: 1px solid rgba(253, 251, 245, 0.3);
     margin-bottom: 3vh;
@@ -55,8 +55,9 @@
   }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 865px) {
   .contact {
+    height: 100vh;
     h2 {
       font-size: 2.5rem;
     }
@@ -64,10 +65,16 @@
     .input-email, .input-message, .input-name {
       margin: 1rem;
       padding: 1rem;
-      width: 65vw;
+      width: 80vw;
     }
   }
   .send {
-    margin-top: 3rem;
+    margin: 3rem
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .contact {
+    height: 110vh;
   }
 }
