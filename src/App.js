@@ -12,7 +12,7 @@ const App = () => {
 
   return (
     <Fragment>
-
+      <Nav />
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>
           <Route exact path='/' component={AboutMain} />

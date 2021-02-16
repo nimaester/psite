@@ -13,16 +13,13 @@ const AboutMain = () => {
   return (
 
     <motion.div
-      variants={slideUpAnimation}
-      initial="hidden"
-      animate="show"
-      exit="exit"
+      // variants={slideUpAnimation}
+      // initial="hidden"
+      // animate="show"
+      // exit="exit"
     >
       <About />
       <AboutMe />
-      <Skills />
-      <Education />
-      <Contact />
     </motion.div>
   );
 };
