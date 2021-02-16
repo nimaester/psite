@@ -13,15 +13,15 @@ const App = () => {
 
   return (
     <Fragment>
+    <Nav />
       <AnimatePresence exitBeforeEnter>
-        <Nav />
         <Switch location={location} key={location.pathname}>
           <Route exact path='/' component={AboutMain} />
           <Route exact path='/experience' component={Skl_Edu} />
           <Route exact path='/contact' component={Contact} />
         </Switch>
-        <Footer />
       </AnimatePresence>
+      <Footer />
     </Fragment>
   );
 };

@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { slideUpAnimation } from "../animations/animation";
+import { slideUpAnimation, slideRightAnimation } from "../animations/animation";
 import fbLogo from "../img/fb.png";
 import linkLogo from "../img/linkin.png";
 import face from "../img/face.png";
@@ -22,7 +22,7 @@ const AboutMe = () => {
         animate={controls}
         className='about-me'
       >
-        <h2>About Me</h2>
+        <motion.h2 variants={slideRightAnimation}>About Me</motion.h2>
         <div className='cards'>
           <div className='bio'>
             <p>
