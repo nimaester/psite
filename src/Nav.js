@@ -19,7 +19,7 @@ const Nav = () => {
           <Link to='/'>Experience</Link>
         </li>
         <li>
-          <Link to='/sked'>Skills</Link>
+          <Link to='/#skill'>Skills</Link>
         </li>
         <li>
           <Link to='/contact'>Contact</Link>

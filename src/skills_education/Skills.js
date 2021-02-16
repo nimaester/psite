@@ -14,11 +14,13 @@ const Skills = () => {
   return (
     <motion.div
       variants={slideUpAnimation}
+      id='skill'
       initial='hidden'
       animate={controls}
       exit='exit'
       ref={element}
       className='skills'
+
     >
       <h2 >Technical Skills</h2>
       <div className='section'>
