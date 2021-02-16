@@ -1,11 +1,12 @@
 .contact{
   height: 100vh;
+  padding: 6rem 5rem 6rem 5rem;
   h2 {
     font-size: 3.5rem;
     color: #00adb5;
     padding-bottom: 6rem;
   }
-  padding: 6rem;
+  // padding: 6rem;
   .contact-form {
     display: flex;
     flex-direction: column;
@@ -15,7 +16,6 @@
     justify-content: center;
   }
   .input-name, .input-email {
-    width: 80vw;
     height: 6vh;
     background-color: #222831;
     border: 1px solid rgba(253, 251, 245, 0.3);
@@ -24,12 +24,13 @@
     font-size: 1.2rem;
     color: #FDFBF5;
     outline: none;
+    min-width: 20vw;
+    max-width: 75vw;
+
   }
 
   .input-message {
-    width: 100%;
     height: 22vh;
-    width: 80vw;
     background-color: #222831;
     border: 1px solid rgba(253, 251, 245, 0.3);
     margin-bottom: 3vh;
@@ -57,15 +58,13 @@
 
 @media screen and (max-width: 865px) {
   .contact {
-    height: 100vh;
     h2 {
       font-size: 2.5rem;
     }
-    padding: 1rem;
     .input-email, .input-message, .input-name {
       margin: 1rem;
-      padding: 1rem;
-      width: 80vw;
+      padding: 0.5rem;
+      width: 75vw;
     }
   }
   .send {
@@ -76,5 +75,11 @@
 @media screen and (max-width: 420px) {
   .contact {
     height: 110vh;
+    .input-email, .input-message, .input-name {
+      margin: 1rem;
+      padding: 1rem;
+      width: 75vw;
+    }
   }
+
 }

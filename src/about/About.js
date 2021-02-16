@@ -1,6 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import { motion,useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 import { slideLeftAnimation, fadeAnimation } from "../animations/animation";
 
 

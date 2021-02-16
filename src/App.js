@@ -21,7 +21,6 @@ const App = () => {
           <Route exact path='/contact' component={Contact} />
         </Switch>
       </AnimatePresence>
-      <Footer />
     </Fragment>
   );
 };

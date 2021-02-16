@@ -21,6 +21,7 @@ const AboutMe = () => {
         initial='hidden'
         animate={controls}
         className='about-me'
+        exit="exit"
       >
         <motion.h2 variants={slideRightAnimation}>About Me</motion.h2>
         <div className='cards'>

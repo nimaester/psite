@@ -1,14 +1,15 @@
-import React, {useState} from "react";
+import React from "react";
 import emailjs from "emailjs-com";
 import { slideUpAnimation } from "./animations/animation";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import ScrollTop from "./animations/scrollTop";
 
 const Contact = () => {
 
   const controls = useAnimation();
   const [element, view] = useInView();
-  const [sent, setSent] = useState(false);
+  // const [sent, setSent] = useState(false); for animation later
 
 
   view && controls.start("show")
@@ -26,7 +27,7 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-          setSent(true);
+          // setSent(true); for animation later
         },
         (error) => {
           console.log(error.text);
@@ -81,6 +82,7 @@ const Contact = () => {
           <input className='send' type='submit' value='Send' />
         </div>
       </form>
+      <ScrollTop />
     </motion.div>
   );
 };

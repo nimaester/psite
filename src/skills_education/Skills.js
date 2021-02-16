@@ -1,9 +1,7 @@
 import React from "react";
 import StarRatings from "react-star-ratings";
-import { motion, useAnimation } from "framer-motion";
-import { slideLeftAnimation,slideUpAnimation } from "../animations/animation";
-import { useInView } from "react-intersection-observer";
-
+import { motion } from "framer-motion";
+import { slideLeftAnimation } from "../animations/animation";
 
 const Skills = () => {
 

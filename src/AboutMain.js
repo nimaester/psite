@@ -11,7 +11,7 @@ const AboutMain = () => {
       variants={slideUpAnimation}
       initial='hidden'
       animate='show'
-      exit='exit'
+      exit="exit"
     >
       <About />
       <AboutMe />
