@@ -7,19 +7,8 @@ import { useInView } from "react-intersection-observer";
 
 const Skills = () => {
 
-  const controls = useAnimation();
-  const [element, view] = useInView();
-  view && controls.start("show");
-
   return (
-    <motion.div
-      variants={slideUpAnimation}
-      initial='hidden'
-      animate={controls}
-      ref={element}
-      className='skills'
-
-    >
+    <div className='skills'>
       <motion.h2
         variants={slideLeftAnimation}
         >Technical Skills</motion.h2>
@@ -262,7 +251,7 @@ const Skills = () => {
       </p>
       <p className='quotee'>-- Steve Jobs</p>
       <hr />
-    </motion.div>
+    </div>
   );
 };
 

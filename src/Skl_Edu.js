@@ -1,27 +1,21 @@
 import React from "react";
 import Education from "./skills_education/Education";
 import Skills from "./skills_education/Skills";
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 import { slideUpAnimation } from "./animations/animation";
-import { useInView } from "react-intersection-observer";
-
-
+import ScrollTop from "./animations/scrollTop";
 
 const Skl_Edu = () => {
-
-  const controls = useAnimation();
-  const [element, view] = useInView();
-
-  view && controls.start("show")
-
   return (
     <motion.div
       variants={slideUpAnimation}
       initial='hidden'
-      animate={controls}
+      animate='show'
+      exit='exit'
     >
       <Skills />
       <Education />
+      <ScrollTop />
     </motion.div>
   );
 };
