@@ -1,9 +1,16 @@
 import React from "react";
 import emailjs from "emailjs-com";
 import { slideUpAnimation } from "./animations/animation";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const Contact = () => {
+
+  const controls = useAnimation();
+  const [element, view] = useInView();
+
+  view && controls.start("show")
+
   const sendEmail = (event) => {
     event.preventDefault();
 
@@ -28,13 +35,15 @@ const Contact = () => {
   return (
     <motion.div
       className='contact'
+      ref={element}
       variants={slideUpAnimation}
       initial='hidden'
-      animate='show'
+      animate={controls}
       exit='exit'
     >
       <form className='contact-form' onSubmit={sendEmail}>
         <div className='name'>
+        <h2>Contact Me</h2>
           <input
             className='input-name'
             spellCheck='false'
