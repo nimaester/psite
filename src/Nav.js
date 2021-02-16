@@ -9,7 +9,7 @@ const Nav = () => {
         <i className="fas fa-home fa-2x"></i>
       </Link>
       <ul className='nav-bar'>
-        <li>
+        <li className='primary'>
           <Link to='/'>Info/Projects</Link>
         </li>
         <li>
