@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { slideDownAnimation } from "../animations/animation";
+import { slideUpAnimation } from "../animations/animation";
 import fbLogo from "../img/fb.png";
 import linkLogo from "../img/linkin.png";
 import face from "../img/face.png";
@@ -17,7 +17,7 @@ const AboutMe = () => {
     <Fragment>
       <motion.div
         ref={element}
-        variants={slideDownAnimation}
+        variants={slideUpAnimation}
         initial='hidden'
         animate={controls}
         className='about-me'
