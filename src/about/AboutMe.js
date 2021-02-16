@@ -10,9 +10,8 @@ const AboutMe = () => {
 
   const controls = useAnimation();
   const [element, view] = useInView();
-  if (view) {
-    controls.start("show");
-  }
+
+  view && controls.start("show")
 
   return (
     <Fragment>

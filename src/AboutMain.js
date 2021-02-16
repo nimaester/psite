@@ -4,6 +4,7 @@ import AboutMe from './about/AboutMe';
 import {motion} from 'framer-motion';
 import {slideUpAnimation} from './animations/animation'
 // import Services from './about/Services'
+import Contact from "./Contact";
 
 const AboutMain = () => {
   return (
@@ -15,6 +16,7 @@ const AboutMain = () => {
     >
       <About />
       <AboutMe />
+      <Contact />
     </motion.div>
   );
 };
