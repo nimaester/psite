@@ -5,6 +5,9 @@ import {motion} from 'framer-motion';
 import {slideUpAnimation} from './animations/animation'
 // import Services from './about/Services'
 import Contact from "./Contact";
+import Skills from "./skills_education/Skills"
+import Education from "./skills_education/Education";
+
 
 const AboutMain = () => {
   return (
@@ -16,6 +19,8 @@ const AboutMain = () => {
     >
       <About />
       <AboutMe />
+      <Skills />
+      <Education />
       <Contact />
     </motion.div>
   );

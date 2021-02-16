@@ -16,6 +16,7 @@ const Education = () => {
       variants={slideDownAnimation}
       initial='hidden'
       animate={controls}
+      exit='exit'
       ref={element}
       className='education'
     >
@@ -74,6 +75,7 @@ const Education = () => {
         "Education is a progressive discovery of our own ignorance."
       </p>
       <p className='quotee'>-- Will Durant</p>
+      <hr />
     </motion.div>
   );
 };

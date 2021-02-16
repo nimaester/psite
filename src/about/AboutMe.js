@@ -42,7 +42,7 @@ const AboutMe = () => {
             <p>07/26/1987</p>
 
             <h4>Location:</h4>
-            <p>Hayward California, USA</p>
+            <p>Hayward CA, USA</p>
           </div>
         </div>
         <p className='foot'>Let's connect! Can't wait to hear from you.</p>

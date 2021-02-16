@@ -1,12 +1,26 @@
 import React from "react";
 import StarRatings from "react-star-ratings";
-import { motion } from "framer-motion";
-import { slideLeftAnimation } from "../animations/animation";
+import { motion, useAnimation } from "framer-motion";
+import { slideLeftAnimation,slideUpAnimation } from "../animations/animation";
+import { useInView } from "react-intersection-observer";
+
 
 const Skills = () => {
+
+  const controls = useAnimation();
+  const [element, view] = useInView();
+  view && controls.start("show");
+
   return (
-    <div className='skills'>
-      <motion.h2 variants={slideLeftAnimation}>Technical Skills</motion.h2>
+    <motion.div
+      variants={slideUpAnimation}
+      initial='hidden'
+      animate={controls}
+      exit='exit'
+      ref={element}
+      className='skills'
+    >
+      <h2 >Technical Skills</h2>
       <div className='section'>
         <div className='section-1'>
           <ul>
@@ -246,7 +260,7 @@ const Skills = () => {
       </p>
       <p className='quotee'>-- Steve Jobs</p>
       <hr />
-    </div>
+    </motion.div>
   );
 };
 
