@@ -115,10 +115,6 @@
   }
 }
 
-.ab {
-  margin: 0rem 6rem 0rem 6rem;
-}
-
 .links {
   display: flex;
   align-items: center;
@@ -135,7 +131,7 @@
 @media screen and (max-width: 865px) {
   .about {
     flex-direction: column;
-    padding: 0rem 1rem 0rem 1rem;
+    padding: 0rem 2rem 0rem 2rem;
     button {
       width: 100%;
     }
@@ -149,7 +145,7 @@
   }
 
   .about-me {
-    padding: 6rem 1rem 6rem 1rem;
+    padding: 6rem 2rem 6rem 2rem;
     h2 {
       font-size: 2.5rem;
       padding-bottom: 0rem;
@@ -184,7 +180,7 @@
 @media screen and (max-width: 370px) {
   .about {
     flex-direction: column;
-    padding: 0rem 1rem 0rem 1rem;
+    padding: 0rem 2rem 0rem 2rem;
     button {
       width: 100%;
     }
@@ -197,7 +193,7 @@
   }
 
   .about-me {
-    padding: 5rem 0.5rem 5rem 0.5rem;
+    padding: 5rem 2rem 5rem 2rem;
     h2 {
       font-size: 2.5rem;
       padding-bottom: 2rem;

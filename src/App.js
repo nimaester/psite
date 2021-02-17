@@ -10,10 +10,11 @@ import "./styles/app.scss";
 
 const App = () => {
   const location = useLocation();
+
   window.onload = () => {
     setTimeout(() => {
       window.scrollTo(0, 0);
-    }, 1)
+    }, 5)
   }
 
   return (
