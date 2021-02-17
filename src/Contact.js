@@ -11,7 +11,6 @@ const Contact = () => {
   const [element, view] = useInView();
   // const [sent, setSent] = useState(false); for animation later
 
-
   view && controls.start("show")
 
   const sendEmail = (event) => {
