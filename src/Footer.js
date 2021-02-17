@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className='footer'>
       <ul>
-        <li>
+        <li className="first">
           <a href="https://www.linkedin.com/in/nimtayo/">
           <i className='fab fa-linkedin fa-2x'></i>
           </a>
