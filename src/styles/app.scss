@@ -40,6 +40,10 @@ hr {
   .quotes {
     padding-top: 3rem;
   }
+  hr {
+    width: 100vw;
+    text-align: left !important;
+  }
 }
 
 @import "./about";
