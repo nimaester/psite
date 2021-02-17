@@ -19,7 +19,7 @@ const About = () => {
         <motion.div className='title' variants={slideLeftAnimation}>
           <div className='hide'>
             <h2>
-              I'm <motion.span variants={fadeAnimation} style={{ color: "#0d7377" }}>Nim,</motion.span>
+              I'm <motion.span variants={fadeAnimation} style={{ color: "#00adb5" }}>Nim,</motion.span>
             </h2>
           </div>
           <div className='hide'>
