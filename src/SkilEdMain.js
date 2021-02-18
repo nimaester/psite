@@ -5,6 +5,19 @@ import { motion } from "framer-motion";
 import { slideUpAnimation } from "./animations/animation";
 import ScrollTop from "./animations/scrollTop";
 
-//
+const Skl_Edu = () => {
+  return (
+    <motion.div
+      variants={slideUpAnimation}
+      initial='hidden'
+      animate='show'
+      exit='exit'
+    >
+      <Skills />
+      <Education />
+      <ScrollTop />
+    </motion.div>
+  );
+};
 
 export default Skl_Edu;
