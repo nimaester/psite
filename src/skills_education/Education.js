@@ -3,13 +3,18 @@ import hrlogo from "../img/hrlogo.png";
 import ccsflogo from "../img/ccsflogo.png";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
-import { slideUpAnimation, slideRightAnimation } from "../animations/animation";
+import { slideUpAnimation, fadeAnimation } from "../animations/animation";
 
 const Education = () => {
 
   const controls = useAnimation();
   const [element, view] = useInView();
-  view && controls.start("show");
+
+  if (view) {
+    controls.start('show')
+  } else {
+    controls.start('hidden')
+  }
 
   return (
     <motion.div
@@ -18,10 +23,9 @@ const Education = () => {
       animate={controls}
       ref={element}
       className='education'
-      id='education'
       exit="exit"
     >
-      <motion.h2 variants={slideRightAnimation} initial='hidden' className='title'>Education</motion.h2>
+      <motion.h2 variants={fadeAnimation} className='title'>Education</motion.h2>
       <motion.div>
         <div className='education-container'>
           <div className='name-of-org'>

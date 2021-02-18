@@ -1,14 +1,14 @@
 import React from "react";
 import StarRatings from "react-star-ratings";
 import { motion } from "framer-motion";
-import { slideLeftAnimation } from "../animations/animation";
+import { fadeAnimation } from "../animations/animation";
 
 const Skills = () => {
 
   return (
     <div className='skills'>
       <motion.h2
-        variants={slideLeftAnimation}
+        variants={fadeAnimation}
         >Technical Skills</motion.h2>
       <div className='section'>
         <div className='section-1'>

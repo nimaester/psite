@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { slideUpAnimation, slideRightAnimation } from "../animations/animation";
+import { slideUpAnimation, fadeAnimation} from "../animations/animation";
 import fbLogo from "../img/fb.png";
 import linkLogo from "../img/linkin.png";
 import face from "../img/face.png";
@@ -11,7 +11,11 @@ const AboutMe = () => {
   const controls = useAnimation();
   const [element, view] = useInView();
 
-  view && controls.start("show")
+  if (view) {
+    controls.start('show')
+  } else {
+    controls.start('hidden')
+  }
 
   return (
     <Fragment>
@@ -23,7 +27,7 @@ const AboutMe = () => {
         className='about-me'
         exit="exit"
       >
-        <motion.h2 variants={slideRightAnimation}>About Me</motion.h2>
+        <motion.h2 variants={fadeAnimation} >About Me</motion.h2>
         <div className='cards'>
           <div className='bio'>
             <p>

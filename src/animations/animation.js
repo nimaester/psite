@@ -9,6 +9,7 @@ export const slideUpAnimation = {
     transition: {
       duration: 0.75,
       when: "beforeChildren",
+      staggerChildren: 1
     }
   },
   exit: {
@@ -31,30 +32,26 @@ export const slideLeftAnimation = {
     transition: {
       duration: 0.5,
       ease: "easeOut",
+      when: "beforeChildren",
       staggerChildren: 0.5
+
     }
-  },
-  exit: {
-    opacity: 0,
   }
 }
 
 export const slideRightAnimation = {
   hidden: {
-    x: 2000,
+    // x: 2000,
     opacity: 0,
   },
   show: {
-    x: 0,
+    // x: 0,
     opacity: 1,
     transition: {
-      duration: 0.3,
+      duration: 0.5,
       ease: "easeOut",
-      staggerChildren: 0.5
+      // staggerChildren: 0.5
     }
-  },
-  exit: {
-    opacity: 0,
   }
 }
 
