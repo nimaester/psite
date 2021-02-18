@@ -7,10 +7,14 @@ const NavList = ({setShowLinks, showLinks}) => {
 
   const pathname = useLocation();
 
+  const closeNavLinks = () => {
+    setShowLinks(false);
+  }
+
   return (
-    <div className={`nav-links ${showLinks ? "active": ""}`}>
+    <div className={`nav-list ${showLinks ? "active": ""}`}>
       <ul>
-      <li className='primary nav-list-link'>
+      <li onClick={closeNavLinks} className='primary nav-list-link'>
           <Link to='/'>Info/Projects</Link>
           <motion.div
             transition={{ duration: 0.75 }}
@@ -18,7 +22,7 @@ const NavList = ({setShowLinks, showLinks}) => {
             className='current-tab'
           />
         </li>
-        <li className='nav-list-link'>
+        <li onClick={closeNavLinks} className='nav-list-link'>
           <Link to='/experience'>Experience</Link>
           <motion.div
             transition={{ duration: 0.75 }}
@@ -28,7 +32,7 @@ const NavList = ({setShowLinks, showLinks}) => {
             className='current-tab'
           />
         </li>
-        <li className='nav-list-link'>
+        <li onClick={closeNavLinks} className='nav-list-link'>
           <Link to='/contact'>Contact</Link>
           <motion.div
             transition={{ duration: 0.75 }}

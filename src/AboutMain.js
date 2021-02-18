@@ -13,9 +13,9 @@ const AboutMain = () => {
       animate='show'
       exit="exit"
     >
-      <ScrollTop />
       <About />
       <AboutMe />
+      <ScrollTop />
     </motion.div>
   );
 };

@@ -1,17 +1,10 @@
 import React from "react";
 import emailjs from "emailjs-com";
 import { slideUpAnimation, fadeAnimation } from "./animations/animation";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 import ScrollTop from "./animations/scrollTop";
 
 const Contact = () => {
-
-  const controls = useAnimation();
-  const [element, view] = useInView();
-
-  view && controls.start("show")
-
   const sendEmail = (event) => {
     event.preventDefault();
 
@@ -37,16 +30,15 @@ const Contact = () => {
   return (
     <motion.div
       className='contact'
-      ref={element}
       variants={slideUpAnimation}
       initial='hidden'
-      animate={controls}
+      animate='show'
       exit='exit'
     >
     <ScrollTop />
       <form className='contact-form' onSubmit={sendEmail}>
         <div className='name'>
-        <motion.h2 variants={fadeAnimation}>Contact Me</motion.h2>
+        <motion.h2 variants={fadeAnimation} >Contact Me</motion.h2>
           <input
             className='input-name'
             spellCheck='false'

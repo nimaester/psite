@@ -5,7 +5,7 @@
   color: white;
   justify-content: center;
   background-image: url('../img//wallpaper2.png');
-  background-position: center 5%;
+  background-position: center 10%;
 
   h2 {
     font-weight: lighter;
@@ -23,8 +23,8 @@
       min-height: 90vh;
     }
   }
-  .description {
-    padding-top: -20rem;
+  .title {
+    margin-top: -4rem;
   }
   button {
     font-weight: bold;
@@ -130,6 +130,7 @@
 
 @media screen and (max-width: 865px) {
   .about {
+    height: 90vh;
     flex-direction: column;
     padding: 0rem 2rem 0rem 2rem;
     button {

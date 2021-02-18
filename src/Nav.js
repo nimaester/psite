@@ -7,6 +7,10 @@ import { useLocation } from "react-router-dom";
 const Nav = ({setShowLinks, showLinks}) => {
   const pathname = useLocation();
 
+  const closeNavLinks = () => {
+    setShowLinks(!showLinks);
+  }
+
   return (
     <nav>
       <Link to='/'>
@@ -40,7 +44,7 @@ const Nav = ({setShowLinks, showLinks}) => {
           />
         </li>
         <div className='burger-icon'>
-          <i className='fas fa-bars fa-2x'></i>
+        <i className={`${showLinks ? "fas fa-times fa-2x" : "fas fa-bars fa-2x"}`} onClick={closeNavLinks}></i>
         </div>
       </ul>
     </nav>
@@ -48,3 +52,5 @@ const Nav = ({setShowLinks, showLinks}) => {
 };
 
 export default Nav;
+
+

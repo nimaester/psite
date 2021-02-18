@@ -13,9 +13,9 @@ const Skl_Edu = () => {
       animate='show'
       exit='exit'
     >
-    <ScrollTop />
       <Skills />
       <Education />
+      <ScrollTop />
     </motion.div>
   );
 };

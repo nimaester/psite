@@ -7,16 +7,16 @@ export const slideUpAnimation = {
     opacity:1,
     y: 0,
     transition: {
-      duration: 0.75,
+      duration: 0.5,
       when: "beforeChildren",
-      staggerChildren: 1
+      staggerChildren: 0.5
     }
   },
   exit: {
     opacity: 0,
     y: 300,
     transition: {
-      duration: 0.75,
+      duration: 0.6,
     }
   }
 }
@@ -49,9 +49,6 @@ export const fadeAnimation = {
       duration: 0.3,
       ease: "easeOut",
     }
-  },
-  exit: {
-    opacity: 0,
   }
 }
 
