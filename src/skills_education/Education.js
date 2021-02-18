@@ -6,14 +6,13 @@ import { motion, useAnimation } from "framer-motion";
 import { slideUpAnimation, fadeAnimation } from "../animations/animation";
 
 const Education = () => {
-
   const controls = useAnimation();
   const [element, view] = useInView();
 
   if (view) {
-    controls.start('show')
+    controls.start("show");
   } else {
-    controls.start('hidden')
+    controls.start("hidden");
   }
 
   return (
@@ -23,9 +22,11 @@ const Education = () => {
       animate={controls}
       ref={element}
       className='education'
-      exit="exit"
+      exit='exit'
     >
-      <motion.h2 variants={fadeAnimation} className='title'>Education</motion.h2>
+      <motion.h2 variants={fadeAnimation} className='title'>
+        Education
+      </motion.h2>
       <motion.div>
         <div className='education-container'>
           <div className='name-of-org'>

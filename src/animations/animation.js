@@ -39,22 +39,6 @@ export const slideLeftAnimation = {
   }
 }
 
-export const slideRightAnimation = {
-  hidden: {
-    // x: 2000,
-    opacity: 0,
-  },
-  show: {
-    // x: 0,
-    opacity: 1,
-    transition: {
-      duration: 0.5,
-      ease: "easeOut",
-      // staggerChildren: 0.5
-    }
-  }
-}
-
 export const fadeAnimation = {
   hidden: {
     opacity: 0
@@ -62,7 +46,7 @@ export const fadeAnimation = {
   show: {
     opacity: 1,
     transition: {
-      duration: 0.5,
+      duration: 0.3,
       ease: "easeOut",
     }
   },
@@ -70,3 +54,20 @@ export const fadeAnimation = {
     opacity: 0,
   }
 }
+
+// NEED TO FIX> NOT WORKING PROPERLY, INFINITE SLIDE FROM RIGHT
+// export const slideRightAnimation = {
+//   hidden: {
+//     // x: 2000,
+//     opacity: 0,
+//   },
+//   show: {
+//     // x: 0,
+//     opacity: 1,
+//     transition: {
+//       duration: 0.5,
+//       ease: "easeOut",
+//       // staggerChildren: 0.5
+//     }
+//   }
+// }
