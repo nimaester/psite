@@ -14,7 +14,7 @@ const App = () => {
   window.onload = () => {
     setTimeout(() => {
       window.scrollTo(0, 0);
-    }, 1)
+    }, 2)
   }
 
   const [showLinks, setShowLinks] = useState(false);
