@@ -8,7 +8,7 @@ const NavList = ({setShowLinks, showLinks}) => {
   const pathname = useLocation();
 
   return (
-    <div className="nav-list">
+    <div className={`nav-links ${showLinks ? "active": ""}`}>
       <ul>
       <li className='primary nav-list-link'>
           <Link to='/'>Info/Projects</Link>
