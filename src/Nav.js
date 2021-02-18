@@ -1,37 +1,47 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 // import logo from "./img/logo.png";
-import {motion} from "framer-motion"
-import {useLocation} from "react-router-dom";
+import { motion } from "framer-motion";
+import { useLocation } from "react-router-dom";
 
 const Nav = () => {
-
   const pathname = useLocation();
 
   return (
     <nav>
       <Link to='/'>
-        <i className="fas fa-home fa-2x"></i>
+        <i className='fas fa-home fa-2x'></i>
       </Link>
       <ul className='nav-bar'>
-        <li className='primary'>
+        <li className='primary nav-link'>
           <Link to='/'>Info/Projects</Link>
-          <motion.div transition={{duration: 0.75}}
-          animate={{width: pathname.pathname === '/' ? "100%" : 0}}
-          className="current-tab" />
+          <motion.div
+            transition={{ duration: 0.75 }}
+            animate={{ width: pathname.pathname === "/" ? "100%" : 0 }}
+            className='current-tab'
+          />
         </li>
-        <li>
+        <li className='nav-link'>
           <Link to='/experience'>Experience</Link>
-          <motion.div transition={{duration: 0.75}}
-          animate={{width: pathname.pathname === '/experience' ? "100%" : 0 }} className="current-tab" />
+          <motion.div
+            transition={{ duration: 0.75 }}
+            animate={{
+              width: pathname.pathname === "/experience" ? "100%" : 0,
+            }}
+            className='current-tab'
+          />
         </li>
-        <li>
+        <li className='nav-link'>
           <Link to='/contact'>Contact</Link>
           <motion.div
-          transition={{duration: 0.75}}
-          animate={{width: pathname.pathname === '/contact' ? "100%" : 0 }}
-          className="current-tab" />
+            transition={{ duration: 0.75 }}
+            animate={{ width: pathname.pathname === "/contact" ? "100%" : 0 }}
+            className='current-tab'
+          />
         </li>
+        <div className='burger-icon'>
+          <i className='fas fa-bars fa-2x'></i>
+        </div>
       </ul>
     </nav>
   );
