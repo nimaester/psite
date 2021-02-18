@@ -6,6 +6,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 10;
+  transition: ease 0.5s;
 
   ul {
     list-style: none;
@@ -13,7 +14,7 @@ nav {
     align-items: center;
     justify-content: center;
   }
-  li {
+  .nav-link{
     padding-left: 3rem;
     position: relative;
   }
@@ -24,7 +25,7 @@ nav {
     letter-spacing: 3px;
   }
 
-  li:hover, fas:hover {
+  li:hover, .fas:hover {
     cursor: pointer;
   }
   .primary {
@@ -44,6 +45,7 @@ nav {
   }
 }
 
+
 @media screen and (max-width: 865px) {
   nav {
     justify-content: space-between;
@@ -51,11 +53,11 @@ nav {
     .nav-link {
       display: none;
     }
-    // a {
-    //   font-size: smaller;
-    // }
     .fa-bars {
       display: inline-block;
+    }
+    .fas {
+      font-size: 1.7rem;
     }
   }
 

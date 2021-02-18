@@ -1,19 +1,16 @@
-import React from "react";
+import React from 'react';
 import { Link } from "react-router-dom";
-// import logo from "./img/logo.png";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
 
-const Nav = ({setShowLinks, showLinks}) => {
+const NavList = ({setShowLinks, showLinks}) => {
+
   const pathname = useLocation();
 
   return (
-    <nav>
-      <Link to='/'>
-        <i className='fas fa-home fa-2x'></i>
-      </Link>
-      <ul className='nav-bar'>
-        <li className='primary nav-link'>
+    <div className="nav-list">
+      <ul>
+      <li className='primary nav-list-link'>
           <Link to='/'>Info/Projects</Link>
           <motion.div
             transition={{ duration: 0.75 }}
@@ -21,7 +18,7 @@ const Nav = ({setShowLinks, showLinks}) => {
             className='current-tab'
           />
         </li>
-        <li className='nav-link'>
+        <li className='nav-list-link'>
           <Link to='/experience'>Experience</Link>
           <motion.div
             transition={{ duration: 0.75 }}
@@ -31,7 +28,7 @@ const Nav = ({setShowLinks, showLinks}) => {
             className='current-tab'
           />
         </li>
-        <li className='nav-link'>
+        <li className='nav-list-link'>
           <Link to='/contact'>Contact</Link>
           <motion.div
             transition={{ duration: 0.75 }}
@@ -39,12 +36,9 @@ const Nav = ({setShowLinks, showLinks}) => {
             className='current-tab'
           />
         </li>
-        <div className='burger-icon'>
-          <i className='fas fa-bars fa-2x'></i>
-        </div>
       </ul>
-    </nav>
+    </div>
   );
 };
 
-export default Nav;
+export default NavList;
