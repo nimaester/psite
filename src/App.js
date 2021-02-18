@@ -17,7 +17,7 @@ const App = () => {
     }, 1)
   }
 
-  const [showLinks, setShowLinks] = useState(true);
+  const [showLinks, setShowLinks] = useState(false);
 
   return (
     <Fragment>
