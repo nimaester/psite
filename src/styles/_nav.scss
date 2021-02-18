@@ -15,21 +15,21 @@ nav {
     justify-content: center;
   }
   .nav-link{
-    padding-left: 3rem;
+    padding-left: 5rem;
     position: relative;
   }
   a {
     text-decoration: none !important;
     color: white;
     font-size: 1.2rem;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
   }
 
   li:hover, .fas:hover {
     cursor: pointer;
   }
   .primary {
-    margin-left: -3rem;
+    margin-left: -5rem;
   }
 
   .current-tab {
@@ -46,6 +46,10 @@ nav {
 
   .fa-times {
     color: white;
+  }
+  .logo {
+    image-resolution: 300dpi;
+    width: 50%;
   }
 }
 

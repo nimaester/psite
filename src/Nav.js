@@ -1,8 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import logo from "./img/logo.png";
+import logo from "./img/logo.png";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
+
+
+// <img className="logo" src={logo} alt="" />
+
+// <Link to='/'>
+//   <i className='fas fa-home fa-2x'></i>
+// </Link>
 
 const Nav = ({setShowLinks, showLinks}) => {
   const pathname = useLocation();
@@ -13,9 +20,8 @@ const Nav = ({setShowLinks, showLinks}) => {
 
   return (
     <nav>
-      <Link to='/'>
-        <i className='fas fa-home fa-2x'></i>
-      </Link>
+      <ul>
+      </ul>
       <ul className='nav-bar'>
         <li className='primary nav-link'>
           <Link to='/'>Info/Projects</Link>
