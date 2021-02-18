@@ -4,24 +4,24 @@ import logo from "./img/logo.png";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
 
-
 // <img className="logo" src={logo} alt="" />
 
 // <Link to='/'>
 //   <i className='fas fa-home fa-2x'></i>
 // </Link>
 
-const Nav = ({setShowLinks, showLinks}) => {
+const Nav = ({ setShowLinks, showLinks }) => {
   const pathname = useLocation();
 
   const closeNavLinks = () => {
     setShowLinks(!showLinks);
-  }
+  };
 
   return (
     <nav>
-      <ul>
-      </ul>
+      <Link to='/'>
+        <i className='fas fa-home fa-2x'></i>
+      </Link>
       <ul className='nav-bar'>
         <li className='primary nav-link'>
           <Link to='/'>Info/Projects</Link>
@@ -50,7 +50,12 @@ const Nav = ({setShowLinks, showLinks}) => {
           />
         </li>
         <div className='burger-icon'>
-        <i className={`${showLinks ? "fas fa-times fa-2x" : "fas fa-bars fa-2x"}`} onClick={closeNavLinks}></i>
+          <i
+            className={`${
+              showLinks ? "fas fa-times fa-2x" : "fas fa-bars fa-2x"
+            }`}
+            onClick={closeNavLinks}
+          ></i>
         </div>
       </ul>
     </nav>
@@ -58,5 +63,3 @@ const Nav = ({setShowLinks, showLinks}) => {
 };
 
 export default Nav;
-
-
