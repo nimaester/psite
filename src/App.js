@@ -8,6 +8,7 @@ import Footer from "./Footer";
 import { AnimatePresence } from "framer-motion";
 import "./styles/app.scss";
 import NavList from "./NavList";
+
 const App = () => {
   const location = useLocation();
 
